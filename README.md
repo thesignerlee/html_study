@@ -6,5 +6,5 @@
 <p>block과 inline태그는 의미에 맞게 외부/내부 구조로 구성해서 사용해야 한다.(의미 중첩되지 않도록)</P>
 <hr>
 <h2>23.02.14 - HTML - 0214_start 업로드, 문서태그+내비게이션 개념<h2>
-<p>&lt;strong&gt;,&lt;em&gt;,&lt;sub&lt;,&lt;sup&gt;,&lt;s&gt;,&lt;del&gt;,&lt;blockquote(hr)&gt;,&lt;q&gt;,&lt;code&gt;, &lt;address&gt;,&lt;hr&gt;</P>
+  <p>&lt;<strong>strong</strong>&gt;,&lt;<em>em</em>&gt;,&lt;sub&lt;,&lt;sup&gt;,&lt;s&gt;,&lt;del&gt;,&lt;blockquote(hr)&gt;,&lt;q&gt;,&lt;code&gt;, &lt;address&gt;,&lt;hr&gt;</P>
 <p>gnb, lnb, snb, fnb, breadcrumbs</p>
