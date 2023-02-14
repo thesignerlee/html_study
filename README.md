@@ -9,4 +9,4 @@
   <p>&lt;<strong>strong</strong>&gt;,&lt;<em>em</em>&gt;,&lt;sub&lt;,&lt;sup&gt;,&lt;s&gt;,&lt;del&gt;,&lt;blockquote(hr)&gt;,&lt;q&gt;,&lt;code&gt;, &lt;address&gt;,&lt;hr&gt;</P>
 <p>gnb, lnb, snb, fnb, breadcrumbs</p>
 <blockqute cite="https://webty.tistory.com/85">
-  유나쌤 블로그 참고 -https://webty.tistory.com/85
+  유나쌤 블로그 참고 - https://webty.tistory.com/85
