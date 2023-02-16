@@ -37,7 +37,7 @@
     <dt>가장 많이 쓰게 될 div 태그</dt>
     <dd>div - 프레임의 그룹 역할 담당, 그룹, div만은 새폴더 개념으로 이름을 가지고 있지 않음. 별도의 이름 선언을 반드시 해야 함.</dd>
     <dd>위치에 맞게 이름 쓰는 게 편함</dd>
-    <dd><ex> title_path_top → 테이틀 있고 내용 있음</dd>
+    <dd> &lt;ex&gt; title_path_top → 테이틀 있고 내용 있음</dd>
     <dd>contents → 내용 묶음</dd>
     <dd>_btm → 아래</dd>
     <dd>class - 태그의 이름</dd>
