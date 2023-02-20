@@ -82,17 +82,17 @@
  <tbody>
    <tr>
      <td rowspan="3">block</td>
-     <td>&lt;tr&gt;></td>
+     <td>&lt;tr&gt;</td>
      <td>&lt;가로행 태그&gt;</td>
    </tr>
    <tr>
      <!--td-->
-     <td>&lt;td&gt;></td>
+     <td>&lt;td&gt;</td>
      <td>&lt;내용(열)태그&gt;</td>
    </tr>
    <tr>
      <!--td-->
-     <td>&lt;th&gt;></td>
+     <td>&lt;th&gt;</td>
      <td>&lt;제목(열)태그&gt;</td>
    </tr>
   </tbody>
