@@ -96,3 +96,62 @@
      <td>&lt;제목(열)태그&gt;</td>
    </tr>
   </tbody>
+<hr>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">업체</th>
+                <th scope="col">요즘제명</th>
+                <th scope="col">데이터</th>
+                <th scope="col">음성</th>
+                <th scope="col">문자</th>
+                <th scope="col">월 정액<br>(부가세 포함금액)</th>
+                <th scope="col">상세</th>
+                <th scope="col">비교</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Amobile</th>
+                <td><span>추천</span><br>요금폭탄방지 매일 2GB</td>
+                <td><em>11GB</em><br>(초과시 매일<br>2GB+3MB 속도로<br>무제한 이용)</td>
+                <td>기본제공(영상/부가 300분)</td>
+                <td>기본제공</td>
+                <td>월<em>20,900</em>원</td>
+                <td><span>가입하기</span></td>
+                <td><span>선택하기</span></td>
+            </tr>
+            <tr>
+                <th scope="row">Amobile</th>
+                <td><span>추천</span>A<br>데이터 무제한</td>
+                <td><em>15GB</em><br>(초과시 3Mbps 속도<br>로 무제한 이용)</td>
+                <td>100분</td>
+                <td>100건</td>
+                <td>월<em>16,500</em>원</td>
+                <td><span>가입하기</span></td>
+                <td><span>선택하기</span></td>
+            </tr>
+            <tr>
+                <th scope="row">smarttel</th>
+                <td><span>추천</span><br>스마트 톡(Talk)</td>
+                <td><em>100MB</em><br>(초과시 400Mbps 속<br>도로 무제한 이용)</td>
+                <td>50분</td>
+                <td>-</td>
+                <td>월<em>6,000</em>원</td>
+                <td><span>가입하기</span></td>
+                <td><span>선택하기</span></td>
+            </tr>
+            <tr>
+                <th scope="row">yeoyou</th>
+                <td><span>추천</span><br>여유 100</td>
+                <td><em>100MB</em><br>데이터 차단기능/차<br>단시 100MB이용불<br>가</td>
+                <td>100분</td>
+                <td>100건</td>
+                <td>월<em>3,300</em>원</td>
+                <td><span>가입하기</span></td>
+                <td><span>선택하기</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
