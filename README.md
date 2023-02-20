@@ -86,12 +86,12 @@
      <td>&lt;가로행 태그&gt;</td>
    </tr>
    <tr>
-     
+     <td>block</td>
      <td>&lt;td&gt;></td>
      <td>&lt;내용(열)태그&gt;</td>
    </tr>
    <tr>
-     
+     <td>block</td>
      <td>&lt;th&gt;></td>
      <td>&lt;제목(열)태그&gt;</td>
    </tr>
