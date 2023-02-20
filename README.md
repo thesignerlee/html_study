@@ -102,7 +102,7 @@
         <thead>
             <tr>
                 <th scope="col">업체</th>
-                <th scope="col">요즘제명</th>
+                <th scope="col">요금제명</th>
                 <th scope="col">데이터</th>
                 <th scope="col">음성</th>
                 <th scope="col">문자</th>
