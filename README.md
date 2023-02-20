@@ -69,3 +69,29 @@
       <dd>a를 사용할 때에는 href를 꼭 안에 넣어야 함.</dd>
     </dl>
 <hr>
+23.02.20-Table
+<hr>
+<table>
+  <thead>
+     <tr>
+       <th>구분</th>
+       <th>태그명</th>
+       <th>의미</th>
+    </tr>
+  </thead>
+ <tbody>
+   <tr>
+     <td rowspan="3">block</td>
+     <td>&lt;tr&gt;></td>
+     <td>&lt;가로행 태그&gt;</td>
+   </tr>
+   <tr>
+     
+     <td>&lt;td&gt;></td>
+     <td>&lt;내용(열)태그&gt;</td>
+   </tr>
+   <tr>
+     
+     <td>&lt;th&gt;></td>
+     <td>&lt;제목(열)태그&gt;</td>
+   </tr>
