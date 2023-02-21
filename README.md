@@ -155,3 +155,14 @@
         </tbody>
     </table>
 </body>
+<hr>
+  <h2>23.02.21-HTML-form</h2>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>form 퀴즈</legend>
+      <span>다음 중 label for와 연관된 input 속성은?</span><br>
+      <label><input type="radio" name="quiz" value="id">id</label>
+      <label><input type="radio" name="quiz" value="class">class</label>
+      <label><input type="radio" name="quiz" value="name">3. name</label>
+      <fieldset>
+        </form>
