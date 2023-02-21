@@ -164,5 +164,9 @@
       <label><input type="radio" name="quiz" value="id">1. id</label><br>
       <label><input type="radio" name="quiz" value="class">2. class</label><br>
       <label><input type="radio" name="quiz" value="name">3. name</label>
+      <span>다음 중 autofocus가 사용될 수 없는 input 속성은?</span><br>
+      1. <dd><input type="text" autofocus placeholder="아이디를 입력하세요" name="user_id" maxlength="7"></dd><br>
+      2. <dd><input type="number" autofocus placeholder="아이디를 입력하세요" name="user_id" maxlength="7"></dd><br>
+      3. <dd><input type="tel" autofocus placeholder="아이디를 입력하세요" name="user_id" maxlength="7"></dd><br>
       <fieldset>
         </form>
