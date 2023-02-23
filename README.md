@@ -172,3 +172,162 @@
         </form>
 <hr>
       <h2>2023.02.22.total review</h2>
+<hr>
+<h2>2023.02.23.HTML -> CSS</h2>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+
+html, body, h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, blockquote, dl, dt, dd, address, video,
+strong, em, del, sup, sub, s, q, code, img, a
+table, tr, th, td, thead, tbody, tfoot,
+form, fieldset, legend, label, input, textarea, option, select, button,
+header, main, footer, article, section, aside, nav, figure, figcaption,
+div, span {
+    /* 글꼴적용방법1. 사용자 컴퓨터에 내장된 글꼴 불러오기*/
+    /* (위)주의사항 : 해당 글꼴이 접속한 사용자에게 없을 경우 글꼴이 임의의 다른 글꼴로 대체될 수 있다. */
+    /* font-family : '맑은 고딕',sans-serif; */
+    /* font-family : '궁서체',serif; */
+
+    /* 글꼴적용방법2. 웹 주소 글꼴을 가져오는 방법 */
+    font-family: 'Noto Sans KR', sans-serif;
+    margin : 0; padding : 0;
+    font-size : 1.0rem;
+    font-weight : normal;
+    font-style : normal;
+    line-height : 1.0;
+    list-style : none;
+}
+a {text-decoration : none; color: #000;}
+table, tr, th, td {border-collapse:collapse;}
+button {cursor:pointer; border : none; background : none;}
+<hr>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경영이념 | SPC삼립</title>
+    <!-- 외부스타일시트, 링크 연결하는 파일은 목적에 따라 구분되게끔 되어있다. 리셋이 메인보다 반드시 밑에 있어야 한다. 디자인이 리셋 되어버리기 때문-->
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo.png" alt="SPC삼립"><!-- alt SPC삼립에 로고라는 설명을 더 붙이지 말 것 --></a></h1>
+        <nav>
+            <a href="#">COMPANY</a>
+            <a href="#">BRANDS</a>
+            <a href="#">IR</a>
+            <a href="#">SNS</a>
+            <a href="#">RECRUIT</a>
+        </nav>
+        <div class="lnb"><!-- lnb, right_lnb, right_menu, user_menu, user_lnb -->
+            <a href="#">CUSTOMER</a>
+            <a href="#">검색</a>
+        </div>
+    </header>
+    <main>
+        <div class="bg">
+            <dl class="top">
+                <dt>현재 페이지 경로</dt>
+                <dd>HOME <span>Company</span> SPC삼립 소개 <em>경영이념</em></dd>
+            </dl>
+        </div>
+        <div class="bg_w">
+            <div class="title">
+                <h1>경영이념</h1>
+                <p>반세기 역사와 전통을 지닌 듬직한 기업 SPC삼립 입니다.</p>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="contents">
+                <p>SPC삼립은 반세기 역사와 전통을 지닌 전문 종합식품기업입니다.<br>
+                1945년 창사 이래 지금까지 국민 식생활개선에 맞추어<br>
+                소비자와 함께 하는 식품기업으로 성장해온 SPC삼립.<br>
+                지난 반세기 동안 축적해온 경험과 기술을 바탕으로 소비자들에게<br>
+                최상의 품질을 지닌 제품과 서비스를 제공하기 위해 최선의 노력을 다하고 있습니다.</p>
+            </div>
+        </div>
+        <div class="bg_w">
+            <div class="contents">
+                <h2>VISION 2025</h2>
+                <p>Best Bakery, Food, Service로<br>Happy Life를 창조</p>
+                <h2>VISION</h2>
+                <p>Top 3 종합식품기업<br>글로벌 식품회사로서 디지털 유통 혁신 선도</p>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="contents">
+                <h2>GOAL</h2>
+                <ul>
+                    <li>매출 2.7조</li>
+                    <li>영업이익 5%</li>
+                    <li>기업가치 2.5조</li>
+                </ul>
+                <h2>STRATEGY</h2>
+                <ul>
+                    <li>
+                        <h3>Value Up</h3>
+                        <p>브랜드 및 고부가 제품 라인업 강화</p>
+                    </li>
+                    <li>
+                        <h3>Expansion</h3>
+                        <p>카테고리 확대/글로벌 확장</p>
+                    </li>
+                    <li>
+                        <h3>pioneer</h3>
+                        <p>유통/제품 혁신을 통한 시장 선도</p>
+                    </li>
+                    <li>
+                        <h3>Focus</h3>
+                        <p>핵심 역량의 집중, 통한 시장 선도</p>
+                    </li>
+                    <li>
+                        <h3>Smart&aggressive</h3>
+                        <p>개인과 조직의 창의적 혁신, 도전적 성장</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ft_top">
+            <div class="ft_left">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">거래희망회사 사전등록</a>
+                <a href="#">동반성장</a>
+            </div>
+            <div class="ft_right">
+                <a href="#">FAMILY SITES</a>
+                <a href="#">SITE MAP</a>
+            </div>
+        </div>
+        <address>고객센터 전화번호 080-739-8572 (월~금 09:00~17:00)<br>
+        경기도 시흥시 공단1대로 101(정왕동) (주)SPC삼립 대표이사 황종현</address>
+        <p>&copy; SPC Samlop. All right reserved</p>
+    </footer>
+</body>
+</html>
+<!-- 
+    레이아웃 태그 : header, section, main, nav, artile, footer, figure, div, span
+    제목 태그 : h1~h6, dt
+    목록 태그 : ol-ul-li
+    내용 태그 : p, dd
+    인라인 태그 : em, strong, sup, sub, q, del, s, br, code
+-->
+<!-- 작업 파일 확장자에 따른 폴더 분류
+    프로젝트명/images (jpg, png, gif, svg)
+    프로젝트명/video (mp4, mp3, ogg)
+    프로젝트명/styles - (CSS)
+    프로젝트명/script - 자바 스크립트 (js)
+    html 파일은 프로젝트명 내부에
+    바로 보이는 위치에 생성한다 (별도 폴더 생성x)
+    ★항상 처음 생성하는 html파일명은
+    index.html로 제작해야 한다. (규칙)
+-->
+main .bg {background-color : #f1f1f1;}
+<hr>
