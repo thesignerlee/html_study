@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 작성연습</title>
+    <!-- css 작성 위치 -->
+    <style>
+        /* CSS 주석 */
+        /* 1. HTML태그 꾸미는 대상 확인 */
+        /* 2. 위 태그가 가족관계에 속해있는지 확인, 속해있지 않다면 태그만 쓰면 됨
+            (가족관계 중 body, html은 생략가능)*/
+        h1 {background-color : yellow;}
+        .test_box {background-color : aqua;}
+        .test_box > h1 {background-color : pink;}
+        .test_box > h2 {background-color : blue;}
+        .test_box > h3 {background-color : greenyellow;}
+        .test_box > h4 {background-color : palegreen;}
+        .test_box > #title1 {background-color : aliceblue;}
+        .test_box > #title2 {background-color : lightslategray;}
+        .test_box > p {background-color : orchid;}
+        .test_box > blockquote {background-color : burlywood;}
+        .test_box > span {background-color : coral;}
+        .test_box p span {background-color : yellowgreen;}
+        .test_box p q {background-color : palevioletred;}
+        .test_box p code {background-color : aquamarine;}
+        .test_box p sup {background-color : crimson;}
+        .test_box p sub {background-color : darkcyan;}
+        .test_box .test1 {background-color : darkgoldenrod;}
+        .test_box .test2 {background-color : coral;}
+        /* 2개 이상의 태그가 가지는 공통 클래스(디자인 동시 적용0 */
+        .test_box .test {border : 2px solid red}
+        /* 개별클래스 */
+        .test_box .test3 {background-color : yellow;}
+        .test_box .test4 {background-color : beige;}
+        /* 
+        block : 기본 w100%, 굴바꿈, 크기를 가질 수 있다.
+        inline : 내용크기만큼 너비인식, 줄바꿈x, 크기x
+        */
+        .test_box #wrap {background-color:bisque;}
+        .test_box #wrap p {background-color :yellow;}
+         /* ver1--------------------------- */
+        header {background-color : red;}
+        header > h1 {background-color : orange;} /* 중복이 안 되므로 >를 안 적어도 됨 */
+        header > form {background-color : pink;}
+        header form input {background-color : cadetblue;}
+        header a {background-color : tomato;}
+        /* ver2--------------------------- */
+        .box {background-color : red;}
+        .box a {background-color : orange;}
+        .box a span {background-color : yellow;}
+        .box .contents {background-color : green;}
+        .box .contents p {background-color : blue;} /* contents 안의 모든 P (첫 번째 P라고 생각하지 말 것) */
+        .box .img {background-color : darkblue;}
+        .box .img img{background-color : magenta;}
+        /* ver3-------------------------- */
+        main {background-color : red;}
+        main aside {background-color : orange;}
+        main aside h2 {background-color : yellow;}
+        main aside ul li {background-color : green;}
+        main aside ul li a {background-color : blue;}
+        main aside ul .last {background-color : darkblue;}
+        main aside ul .last a {background-color : magenta;} /* li.last를 붙이면 last의 이름을 가진 li라고 명시함. 이름이 하나일 경우에 굳이 붙일 필요 없음. 중복될 때는 확실하게 구분지어야 함 */
+        main section {background-color : lawngreen;}
+        main section .top {background-color : lemonchiffon;}
+        main section .top h1 {background-color : lightblue;}
+        main section .top p {background-color : lightcoral;}
+        main section article {background-color : khaki;}
+        main section article p {background-color : hotpink;}
+        /* ver 4------------- */
+        #t {background-color : red;}
+        #t thead {background-color : orange;}
+        #t thead tr {background-color : yellow;}
+        #t thead tr th {background-color : green;}
+        #t tbody {background-color : blue;}
+        #t tbody tr {background-color : darkblue;}
+        #t tbody tr td {background-color : magenta;}
+        #t tbody tr td span {background-color : lime;}
+        #t tfoot {background-color : lightseagreen;}
+        #t tfoot tr {background-color : khaki}
+        #t tfoot tr th {background-color : gold;}
+        #t tfoot tr td {background-color : slateblue;}
+        #t tfoot tr td em {background-color : salmon;}
+        /* 인접형제선택자 }*/
+        .test_box #title2+p {border:5px solid black;}
+        .test_box h2+h3 {border:5px solid pink;}
+        /* 그룹선택자 */
+        .test_box p sup,
+        .test_box p sub {border:2px solid blue;}
+        /* 그룹선택자2 */
+        #t thead tr th,
+        #t tfoot tr th {border : 2px solid green}
+        /* 형제선택자 */
+        .test_box #title2~p {border : 10px solid black;}
+</style>
+</head>
+<body>
+    <h1>ver0</h1>
+    <div class="test_box">
+        <h1>h1</h1><!-- 이름을 가지고 있는 test_box(div의 이름)가 부모 -->
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h1 id="title1">h1-id</h1>
+        <h2 id="title2">h2-id</h2>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <blockquote cite="#">blockquote</blockquote>
+        <span>span2222</span>
+        <p><span>span</span></p>
+        <p><q cite="#">q</q></p>
+        <p><code>code</code></p>
+        <p><sup>sup</sup><br><sub>sub</sub></p>
+        <div class="test1">test1-div</div>
+        <div class="test2">test2-div</div>
+        <div class="test3 test">test3-div</div><!-- 한 칸을 띄면 클래스 이름을 한 개 더 주겠다는 소리, 앞뒤의 테스트가 다르다는 뜻-->
+        <div class="test4 test">test4-div</div><!-- 앞의 이름, 개별 클래스, 뒤의 이름 공통 클래스(일부러 같은 이름을 부여함) -->
+        <div id="wrap"><p>wrap-div</p></div>
+    </div>
+    <hr>
+    <h1>ver1</h1>
+    <header>
+        <h1>logo</h1>
+        <form action="#">
+            <input type="text" name="id">
+            <input type="text" name="pw">
+        </form>
+        <a href="#">lnb</a>
+    </header>
+    <hr>
+    <h1>ver2</h1>
+    <div class="box">
+        <a href="#"><span>link</span></a>
+        <div class="contents">
+            <p>contents1</p>
+            <p>contents2</p>
+            <p>contents3</p>
+        </div>
+        <div class="img"><img src="#" alt=""></div>
+    </div>
+    <hr>
+    <h1>ver3</h1>
+    <main>
+        <aside>
+            <h2>title</h2>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li class="last"><a href="#">menu4</a></li>
+            </ul>
+        </aside>
+        <section>
+            <div class="top">
+                <h1>main_title</h1>
+                <p>path</p>
+            </div>
+            <article>
+                <p>contents</p>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <h1>ver4</h1>
+    <table id="t">
+        <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cell1</td>
+                <td><span>cell2</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total</th>
+                <td><em>cell</em></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+<!--
+    HTML : 틀, 구조, 의미
+    CSS  : HTML 디자인 역할
+    cascading(위에서 아래로 흐른다, 폭포처럼) style sheet
+    tr을 꾸미고 싶다면 어떤 순서대로 내려와야(위에서 아래로 흐르는 방향으로) 하는지를 알아야 정확하게 꾸밀 수 있음
+    CSS 작성 시에는 HTML의 가족관계 순서대로 작성해야 한다.
+
+    HTML 문법 : <태그 속성="값"></태그>
+    CSS 문법  : 선택자 {속성:값; 속성:값;}:은 HTML의 =과 같고 /는;과 같다. 속성 하나가 끝날 때마다 속성:값;을 붙여야 한다.(세미콜론을 꼭 붙여야 한다. 중요.) 따옴표가 없음(무조건 안 쓰는 건 아님)
+    CSS속성 값에 "" 작성하는 경우는 => 값에 한글, 공백이 들어갈 경우, 숫자나 영어는 ""를 쓰지 않아도 된다.
+    한글이 들어가는 경우=글꼴, noto sans의 경우에도 공백이 들어가기 때문에 ""를 써야함
+    css에서는 ""가 아니라''를 써도 됨
+    선택자와 {} 사이에 공백 주기 - 가독성을 위해서
+
+    선택자란? css로 디자인 하는 HTML 대상
+    ex> <p>text</p> p태그에 묶인 글자를 빨강
+    p {글자색:빨강;}
+-->
