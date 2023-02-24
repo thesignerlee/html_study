@@ -331,3 +331,192 @@ button {cursor:pointer; border : none; background : none;}
 -->
 main .bg {background-color : #f1f1f1;}
 <hr>
+      <h2>2023.02.24.CSS</h2>
+      CSS
+
+---
+
+링크 중에 리셋을 앞에 둘 것. 뒤에 두면 리셋을 해버리기 때문.
+
+개별로 폰트를 넣어주려면 디자인 CSS에
+
+한꺼번에 입혀주려면 리셋 CSS에 넣는다
+
+px은 고정값이라 기기에 따라 크기가 커지고 작아짐, em은 상대적인 값이라 변환 가능
+
+em의 문제 - 상대적이기 때문에 부모의 폰트값에도 영향을 미침
+
+1.0em이 16px인 이유는 바디 기준으로 16px이 설정되어 있기 때문에
+
+em이 아니라 rem이라고 쓰는 이유 - 부모의 상대 크기를 인식하는 게 아니라 body의 값을 항상 인식하게 하기 위해
+
+rem 단위를 쓰는 게 권장됨
+
+---
+
+### line-height 행간
+
+```css
+line-height:1.5;
+line-height:150%;
+line-height:150px;
+```
+
+### letter-spacing 자간
+
+```css
+letter-spacing:0;
+letter-spacing:-0.5px;
+letter-spacing:-0.05em;
+```
+
+여기는 em을 많이 씀
+
+기본적으로 -0.0부터 쓰고 그 다음에 숫자가 달라짐
+
+-.0.02는 피그마에서 -2%의 값
+
+```css
+font-family : '맑은 고딕',sans-serif; /* 15px */
+    font-size : 0.938rem;
+    line-height:1.5;
+    letter-spacing:-0.02em; /* figma -2% */
+```
+
+주로 이 4가지 기능을 기본으로 씀
+
+### word-spacing 단어와 단어 사이 간격
+
+```css
+word-spacing:1px;
+word-spacing:-0.05em;
+```
+
+자간과 다르게 기본적으로 -가 아니라 + 0.0~으로 시작함
+
+text-transform:lowercase;
+
+대문자를 소문자로
+
+text-transform:uppercase;
+
+소문자를 대문자로
+
+text-transform:capitalizee;
+
+맨앞만 글자 대문자로
+
+text-decoration:underline;
+
+밑줄표시
+
+font-style:italic;
+
+기울기
+
+text-decoration:line-through;
+
+취소선
+
+같은 그룹이 있다면 먼저 쓰고 이름 있는 것을 나중에 쓰는 게 좋음
+
+font-weight 폰트 굵기
+
+클래스가 들어간 것도 같은 값이면 이름만 가진 같은 것이다.
+
+같은 값에 행간이나 크기 조절이 되어 있으면 클래스에 개별로 처리할 필요가 없음
+
+---
+
+### FAVICON - 탭에 페이지를 구별하기 위해 만든 이미지
+
+외울 필요 없이 복사해서 사용 가능
+
+<link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
+<link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
+
+---
+
+웹페이지에서 선 긋기
+
+상하좌우에 선을 긋고 좌우의 선을 지우는 방법
+
+처음부터 상하에만 선을 긋는 방법
+
+제목을 한 칸 띄면 아예 새로운 이름으로 하겠다는 거 “X X”는 이름 두 개 “X”는 이름 하나
+
+---
+
+인라인 블록은 인라인과 블록 속성을 다 가지고 있다는 점
+
+## display 요소 표시 속성 ( block / inline / inline-block )
+
+HTML이 가지는 기본 요소의 속성을 다른 속성으로 변경 시 또는 요소를 숨기거나 표시할 경우 사용합니다.
+
+크기나 여백을 사용할 때는 그 대상이 블록/인라인 어느쪽에 해당되는 대상인지를 먼저 체크하고
+
+그에 따른 속성과 값을 배치해야 합니다.
+
+그 때 필요에 따라 display라는 CSS 속성이 사용됩니다.(필수가 아닌 상황에 따른 선택적 속성)
+
+```css
+display:none;
+display:inline;
+display:block;
+display:inline-block;
+```
+
+## block 요소 특징
+
+ex) h1~6, p, div, blockquote, dl, dt, dd, ol, ul, li, header, footer, nav, main, section, article, video, iframe, table, tr, td, th, thead, tbody, tfoot, hr, form, filedset 등
+
+- 기본 너비 100%를 가지고 있습니다.
+- 크기, 여백 적용이 가능합니다.
+- 너비100%와는 별도로 항상 줄바꿈이 이루어집니다.
+
+## inline 요소 특징
+
+ex) a, img, span, em, strong, i, del, s, q, code, button, input, select, option, legend, label, br 등
+
+- 인라인 태그 내 내용(텍스트 및 이미지)의 크기만큼만 인식합니다.
+- 크기를 적용할 수 없습니다.
+- 여백(margin, padding)이 적용은 되나 크기 적용불가 특징으로 인해 주변 요소와 겹침현상이 발생합니다.
+- 줄바꿈이 되지 않고 옆으로 나열됩니다.
+
+## inline-block 요소 특징
+
+- CSS display 명령으로 적용할 수 있습니다.
+- 크기, 여백 적용이 가능합니다.
+- 줄바꿈이 되지 않고 옆으로 나열됩니다.
+- 인라인-블록 요소 사이 기본 공백이 포함됩니다.
+
+margin - 해당 오브젝트의 바깥쪽을 벌려라
+
+padding - 너비는 그대로, 패딩값이 더해지면 그 부분에 기존 높이나 넓이에 더해진다.
+
+box-sizing:border-dox; 원래 값을 계산해서 넣어주는 옵션, 고정됨, 여백이 안 들어가는 데가 없고 그 때마다 많이 쓸 거임. 리셋에 넣는 게 좋음.
+
+*- 전체 선택자, 전체에 적용하라는 뜻 * box-sizing:border-dox; 박스 사이징을 전체에 적용해라
+
+padding, margin은 누구를 기준으로 하느냐에 따라 값을 주는 대상과 수치가 달라짐
+
+CSS에서는 h1의 경우 그 글자만큼의 크기만 가진다
+
+```css
+/*margin: 요소와 요소 사이를 떨어뜨릴 때 */
+/* padding:요소와 그 안 내용 사이를 떨어뜨릴 때 */
+```
+
+박스 둥글게 만들기 - 원형 레이아웃을 넣고 싶을 때
+
+처음부터 원으로 만드는 게 아니라 사각형 상태에서 둥글게 만들어줘야 함. 250 크기의 네모라면 125만큼 둥글어짐.
+
+width:250px; height:250px;
+
+_border-radius:125px; = border-radius:50%;
+
+단 상자의 크기가 일정해야 함
+
+포토샵에서 이미지 조절할 때에도 크기 조절
+
+CSS에서 할 때에도 가로세로 중에 한 가지 값만 쓰면 나머지 값도 자동으로 조절됨 동시에 줘서는 안 됨
