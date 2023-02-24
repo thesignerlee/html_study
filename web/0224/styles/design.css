@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&display=swap');
+.wrap {background-color : pink}
+.wrap .title {}
+.wrap .title h1 {
+    font-size : 1.875em; /* 30pt = 1.875em */
+    font-family: 'Noto Serif KR',serif;
+    letter-spacing:-0.02em;
+    word-spacing : 0.05em;
+    font-weight :700; /* 평균400~굵기700~900 */
+    font-style:italic;
+    /* text-decoration:underline; */
+    text-decoration:line-through;
+}
+.wrap .title h1 span {
+    font-size : 1.875rem;
+    /* text-transform:lowercase; 소문자로 만들기 */
+    /* text-transform:uppercase; 대문자로 만들기*/
+    text-transform:capitalizee; /* 맨앞 글자 대문자로 만들기 */
+}
+.wrap .container {}
+.wrap .container dl {}
+.wrap .container dl dt {
+    font-size : 1.25rem; /* 20px */
+    font-family: 'Noto Serif KR',serif;
+    letter-spacing : -0.03;
+    letter-spacing : 0.02
+}
+.wrap .container dl dd {
+    font-family : '맑은 고딕',sans-serif; /* 15px */
+    font-size : 0.938rem;
+    line-height:1.5;
+    letter-spacing:-0.02em; /* figma -2% */
+    word-spacing : 0.05em;
+}
+.wrap .quiz {}
+.wrap .quiz h1 {
+    line-height :2;
+    text-transform : uppercase;
+    font-size:1.5rem; line-height:2;
+}
+.wrap .quiz ul {}
+.wrap .quiz ul li {
+    text-decoration:line-through;
+    line-height :1.5;
+}
+.wrap .quiz ul .answer {
+    text-decoration:underline;
+    font-weight : 700;
+}

@@ -1,0 +1,26 @@
+.a {
+    font-size:3rem;
+    background-color : aqua;
+    display: inline-block;
+    width: 300px; height:200px;
+    /* 높이는 내용 높이만큼 */
+}
+.b {
+    font-size:5rem;
+    background-color: pink;
+    display:inline-block;
+    width:200px; height:150px;
+}
+.box {
+    width:100px; height:100px;
+}
+.c {
+    background-color: yellow;}
+.d {
+    background-color: skyblue;
+    padding: 5px 10px 15;
+    margin: 0px;}
+/*     box-sizing:border-dox; */
+/*     width:50px; height:80px; */
+/*margin: 요소와 요소 사이를 떨어뜨릴 때 */
+/* padding:요소와 그 안 내용 사이를 떨어뜨릴 때 */
