@@ -520,6 +520,7 @@ _border-radius:125px; = border-radius:50%;
 포토샵에서 이미지 조절할 때에도 크기 조절
 
 CSS에서 할 때에도 가로세로 중에 한 가지 값만 쓰면 나머지 값도 자동으로 조절됨 동시에 줘서는 안 됨
-
       <hr>
       <h2> 2023.02.26. HTML. CSS . REPEAT.</h2>
+      <hr>
+      <h2>2023.02.26. HTML.CSS.REPEAT.</h2>
