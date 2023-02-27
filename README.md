@@ -687,3 +687,111 @@ main .path .blog span::after {
     display:inline; content:'\f30b';
 }
 <hr>
+# 22일차
+
+### CSS
+
+.skip 안 보이게 처리하는 키워드
+
+.skip {display:none;}
+
+[블록과 인라인 요소의 특징](https://webty.tistory.com/62)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af7def3c-2327-4dcc-bb44-58bf220a943d/Untitled.png)
+
+첫 번째 화살표는 이전 형제가 인라인
+
+두 번째 화살표는 이전 형제가 블록이라 아래로 내려감
+
+사용자의 선택영역을 조금이라도 넓히기 위해 NAV의 패딩 공간을 넓힌다.
+
+a는 HTML적인 의미로 인라인/블록의 의미를 가지고 있지만 CSS에서는 인라인으로 인식
+
+viewport - 내가 보고 있는 화면을 인식, 전체 화면 아님 -VH(높이) vw(너비) - 100%와 그리 다르지는 않음
+
+---
+
+[float 기본과 활용](https://webty.tistory.com/63)
+
+## float 위치 설정
+
+- 같은 부모 안 형제 요소(인라인 또는 블록)에 작성하여 위치를 설정합니다.
+- center값은 없으며 좌우로만 배치할 수 있습니다.
+- right 값을 2번 이상 사용 시 순서가 역순이 됩니다. ex) 123 => 321
+
+```css
+float:left
+float:right
+float:none; 해제코드
+```
+
+그룹 선택자 만들기 - 콤마를 붙여서 옆에 새로 하나 작성하기
+
+EX) .wrap {}
+
+.wrap .a {}
+
+.wrap .b {}
+
+→ .wrap . a, .wrap .b {}
+
+형제의 위치를 옮기고 싶으면 부모의 크기를 바꿔야 한다.
+
+```css
+.wrap {background-color: aquamarine}
+.wrap .a {
+    border:5px solid red;
+    float:left;}
+.wrap .b {
+    border:5px solid blue;
+    float:right;}
+.wrap .a, .wrap .b {width:100px; height:100px; background-color: yellow;}
+```
+
+형제 좌우 상태에서 wrap의 크기를 조절
+
+---
+
+CSS 3에서는 Float(오래돼서 문제가 있는 요소)가 그대로 있음, 문제가 있음
+
+float란 블록요소의 흐름을 변경하기 위해 사용하는 **레이아웃 배치 CSS 속성**
+
+웹 페이지에서 좌/우로 배치되는 레이아웃을 제작 시 사용한다.
+
+HTML4 이전 버전부터 사용하던 레이아웃 개념으로 호환성(익스플로러에서만 사용되었기 때문에 호환성이라는 말은 이제 쓰이지 않음)이 높다.
+
+float의 **부유**개념 -적용시 배경색이 사라지는 이유
+
+부모의 높이는 크기가 따로 안 들어가면 자식의 크기만큼 인식함
+
+자식이 위로 올라가면서 float의 값이 0처리
+
+다음 형제가 존재할 경우 float 값이 0이 되어버리면 다른 형제에게 올라간다.
+
+자식하고 상관없이 크기를 유지할 수 있게 만드는 장면이 필수
+
+float는 가출한다는 개념. 가출했으면 잡아오기.
+
+다른 애를 데려오거나 float를 잡아오거나 하는 장면을 반드시 삽입해야 함
+
+overflow - 넘치는 영역을 숨겨라 - 위치를 재인식하면서 안쪽에 있는 부분만 숨겨라.
+
+위치를 인식해서 정말 나갔는지 인식
+
+.wrap::after {clear:both; display:block; content:'C';}
+
+이 때 C는 CSS에서 만든 가상의 자식이다. 그래서 상황에 따라서 쓰고 보통은 비워둠.
+
+다른 형제에 float가 있는데 자기 혼자만 float가 안 적혀 있을 경우 형태값이 유지되지 않음
+
+CSS는 html 태그와는 달리 속성 값에 따라 디자인에 필요한 새로운 순서를 재창조할 수 있음.
+
+left는 두 번 이상 써도 역순이 안 되므로 두 번 이상 써도 됨
+
+[폰트어썸](https://webty.tistory.com/153)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc41b635-c7a7-4b96-92cf-990915cf3b3b/Untitled.png)
+
+C와 D를 이렇게 배치시키려면
+
+C를 clear:both;처리 후에 float:left, B를 float:rightfmf tkdydgksek
