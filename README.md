@@ -521,6 +521,169 @@ _border-radius:125px; = border-radius:50%;
 
 CSS에서 할 때에도 가로세로 중에 한 가지 값만 쓰면 나머지 값도 자동으로 조절됨 동시에 줘서는 안 됨
       <hr>
-      <h2> 2023.02.26. HTML. CSS . REPEAT.</h2>
+      <h2> 2023.02.25. HTML. CSS . REPEAT.</h2>
       <hr>
       <h2>2023.02.26. HTML.CSS.REPEAT.</h2>
+<hr>
+<h2>2023.02.27. HTML/CSS </h2>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/design2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">c</div>
+    </div>
+    <div class="next"></div>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+    <!-- FAVICON -->
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/design3.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+        <form>form</form>
+        <div class="lnb">
+            <a href="#">로그인</a>
+            <a href="#">가입</a>
+        </div>
+    </header>
+    <main>
+        <dl class="path">
+            <dt class="skip">현재페이지경로</dt>
+            <dd><span class="awesome">웹접근성이란</span>웹접근성개요</dd>
+            <dd class="blog">네이버 <span class="awesome">블로그</span> 내 블로그</dd>
+        </dl>
+    </main>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0227-3</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/design4.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrap">
+        <a href="#" class="a">A</a>
+        <a href="#" class="b">B</a>
+        <a href="#" class="c">C</a>
+        <a href="#" class="d">D</a>
+    </div>
+</body>
+</html>
+<hr>
+.path {
+    width: 50vw; /* 퍼센트로 하면 가변형이 됨 */height: 100vh;
+    background-color:lightgray;
+}
+.path dl {background-color: yellow;} /* 블록이므로 크기는 부모의 100%를 가진다, 여기서는 div 기준 100%, 높이는 무조건 내용 만큼만 인식함 */
+.path dl dt {} /* 스킵 할 거면 숨겨도 됨 */
+.path dl dd {background-color: pink;} /* 블록이므로 크기는 부모의 100%를 가진다, 여기서는 dl 기준 100%, 높이는 무조건 내용 만큼만 인식함 */
+.path dl dd i {} /* 수식해주는 것이므로 클래스 이름을 따로 안 적어도 됨, 아니면 공통되는 .fa-solid로 변경해도 됨 */
+.path dl dd span {
+    background-color: aqua;
+    display:inline-block;
+    margin:5px 10px 30px 0;
+/*     margin-left:20px;
+    margin:0 0 0 20px; */
+}
+.path dl dd a {
+    background-color:lime;
+/*     width:120px; 크기를 쓰기보다는 패딩을 더 많이 씀*/
+    padding:10px 30px 10px 0;
+    display:inline-block;
+}
+.path dl dd .noto {font-family: 'Noto Sans KR', sans-serif;}
+.path dl dd .nanum {font-family: 'Nanum Gothic', sans-serif;}
+<hr>
+.wrap {
+    background-color: aquamarine;
+    width:500px;
+}
+    /* 자식에 float 적용 시 생기는 부모 오류해결법 */
+    /* 1. 높이강제부여 */
+    /* height:100px; */
+    /* 2. 자식 높이 재인식 */
+    /* overflow:fidden; */
+    /* 3. 가상자식생성 */
+    /* 선택자 추가 */
+.wrap::after {clear:both; display:block; content:'d';}
+    /* 존재하지 않는 태그를 생성하는 명령 */
+.wrap .a {
+    border:5px solid red;
+    float:left;}
+.wrap .b {
+    border:5px solid blue;
+    float:right;}
+.wrap .c {
+    border:5px solid green;
+    float: left;
+    /* clear:both; *//* 이전 형제 float 위치 제거->새로운 행 선언 */
+}
+.wrap .a, .wrap .b, .wrap .c {width:100px; height:100px; background-color: yellow;}
+.next {
+    width: 500px; height:250px;
+    background-color:gold;
+}
+<hr>
+header {
+    background-color: aqua;
+    /* height:100px; */
+    /* overflow:hidden; */
+    }
+header::after {clear:both; content:''; display:block;}
+header h1 {
+    background-color: gray;
+    float: left;}
+header form {
+    background-color: greenyellow;
+    float: left;
+}
+header .lnb {background-color: pink;
+    float:right;}
+header .lnb a {}
+header h1, header form, header .lnb {width:100px; height: 100px;}
+main {}
+main .path {}
+main .path dt {}
+main .path dd {}
+main .path dd span {}
+main .path dd span::after {
+    display:inline; content:'\f105';
+}
+main .path .blog span::after {
+    display:inline; content:'\f30b';
+}
+<hr>
