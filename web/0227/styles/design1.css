@@ -1,0 +1,23 @@
+.path {
+    width: 50vw; /* 퍼센트로 하면 가변형이 됨 */height: 100vh;
+    background-color:lightgray;
+}
+.path dl {background-color: yellow;} /* 블록이므로 크기는 부모의 100%를 가진다, 여기서는 div 기준 100%, 높이는 무조건 내용 만큼만 인식함 */
+.path dl dt {} /* 스킵 할 거면 숨겨도 됨 */
+.path dl dd {background-color: pink;} /* 블록이므로 크기는 부모의 100%를 가진다, 여기서는 dl 기준 100%, 높이는 무조건 내용 만큼만 인식함 */
+.path dl dd i {} /* 수식해주는 것이므로 클래스 이름을 따로 안 적어도 됨, 아니면 공통되는 .fa-solid로 변경해도 됨 */
+.path dl dd span {
+    background-color: aqua;
+    display:inline-block;
+    margin:5px 10px 30px 0;
+/*     margin-left:20px;
+    margin:0 0 0 20px; */
+}
+.path dl dd a {
+    background-color:lime;
+/*     width:120px; 크기를 쓰기보다는 패딩을 더 많이 씀*/
+    padding:10px 30px 10px 0;
+    display:inline-block;
+}
+.path dl dd .noto {font-family: 'Noto Sans KR', sans-serif;}
+.path dl dd .nanum {font-family: 'Nanum Gothic', sans-serif;}

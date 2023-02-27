@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&display=swap');
-.wrap {background-color : pink}
+.wrap {background-color : pink;}
 .wrap .title {}
 .wrap .title h1 {
     font-size : 1.875em; /* 30pt = 1.875em */
