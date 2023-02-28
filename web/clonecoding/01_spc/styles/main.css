@@ -1,13 +1,46 @@
-/* header 백 자가 쉽게 넘어가기 때문에 주석을 달아둬야 함-------------*/
-header {}
-header h1 {}
+/* all_layout */
+/* main .bg_path .top,
+main .bg_w .itle,
+main .bg_.contents,
+main .bg_w_.contents, */
+header, /* 헤더는 한 줄 */
+main > div > *,
+footer .ft_top,
+footer address,
+footer > p {
+/*     border: 5px solid red; */
+    width:1200px; margin:0 auto;
+} /* 푸터는 세 줄이라 따로따로 감싸주기 위해 */
+/* header 백 자가 쉽게 넘어가기 때문에 주석을 달아둬야 함-------------*/ /* 1200너비 */
+main > div > * {
+    text-align:center;
+}
+header {
+    height:92px;
+}/* 헤더에만 height가 들어간다고 생각 */
+header h1 {
+    float:left;
+    padding-top:5px;}
 header h1 a {}
-header h1 a img {width:60px;}
-header nav {}
-header nav a {font-size:1.063rem;}
-header nav .active {color:#36b4e5;}
-header .lnb {}
+header h1 a img {
+    width:60px;}
+header nav {float:left;
+    line-height:92px;}
+header nav a {
+    font-size:1.063rem;
+    padding-left:30px;}
+header nav .active {padding:0; color:#36b4e5;}
+header .lnb {
+    float:right;
+    line-height:92px;
+    margin-left:300px;}
 header .lnb a {}
+header .lnb a:nth-child(2):before {
+    content:'|';
+    display:inline;
+    padding-left: 10px;
+    margin-right: 10px;
+}
 /* main----------- */
 main {}
 /* 공통 배경 */
@@ -24,7 +57,7 @@ main .border {
 main .bg_path {background-color:#f1f1f1;}
 main .bg_path .top {padding:20px 0;}
 main .bg_path .top dt {}
-main .bg_path .top dd {}
+main .bg_path .top dd {text-align:right;}
 main .bg_path .top dd span {}
 main .bg_path .top dd em {}
 /* 경영이념 제목 */
@@ -43,22 +76,42 @@ margin-bottom:30px;}
 main .bg_w .contents p {
     font-size:1.938rem;
     line-height:1.5;
-    letter-spacing:-0.02em;
+    letter-spacing:-0.01em;
+}
+main .bg_w .contents p:nth-child(2) {
+    margin-bottom:100px;
 }
 /* 경영이념 GOAL, STRATEGY */
 main .bg .contents h2 {
     font-size:1.25rem;
     margin-bottom : 30px;}
-main .bg .contents ul {}
+main .bg .contents ul {
+    /* overflow:hidden; 바깥쪽으로 나간 영역을 숨겨라라는 뜻, 그림자를 입히면 이것 때문에 그림자가 빠져 나온 것으로 보임 */
+    display:inline-block;/* float 오류 방식을 디스플레이로도 방지할 수 있음 float의 부모 높이 0 처리 오류해결방법으로 display:inline-block도 가능하다. */
+}
+main .bg .contents h2:nth-child(3){
+    margin-top:100px;
+}
 main .bg .contents .goal_list {}
 main .bg .contents .goal_list li {
     width: 250px; height: 250px;
     border-radius:50%;
+    line-height:250px;
+    /* float:left; */
+    display:inline-block; /* 인라인 블록으로 정렬시키기, 위치는 인라인이라 정렬도 인라인으로 먹는 것 */
+    box-shadow:0 0 10px gray;
+    margin-left:-10px;
 }
 main .bg .contents .strategy_list {}
 main .bg .contents .strategy_list li {
     width: 180px; height: 180px;
-    border-radius:50%}
+    border-radius:50%;
+    padding:60px 20px 0;
+    /* display:inline-block; -> 사용시 내용 개수에 차이가 생기기 때문에 인라인 블록을 쓰면 안 됨, 인라인은 내용의 개수만큼 인식하므로*/
+    float:left;
+    /* box-shadow:x y blur color; */
+    box-shadow:0 0 10px gray;
+}
 main .bg .contents ul li {
     font-size:1.5rem;
     background-color:#fff;
@@ -71,17 +124,18 @@ main .bg .contents ul .last {
     background-color:#f3c300;
     }
 main .bg .contents ul li h3 {font-size: 1.063rem;}
-main .bg .contents ul li p {}
+main .bg .contents ul li p {line-height:18px;}
 /* footer----------- */
-footer {}
-footer .ft_top {}
-footer .ft_top .ft_left {}
+footer {padding:50px 0%;}
+footer .ft_top {overflow:hidden;}
+footer .ft_top .ft_left {float:left;}
 footer .ft_top .ft_left a {font-weight:700;}
-footer .ft_top .ft_right {}
+footer .ft_top .ft_right {float:right;}
 footer .ft_top .ft_right a {
     border:1px solid #aaa;
     display:inline-block;
     padding:10px 20px;
+    
 }
-footer address {}wwwww
-footer address+p {}
+footer address {line-height:1.5;}
+footer address+p {padding-top:15px;}
