@@ -1,31 +1,36 @@
-main,
-.top,
-section{border: 5px solid red;}
-
-main {background-color:pink;
+main {
     width:850px;
     margin: 0 auto;
+    border: 1px solid gainsboro;
 }
-main .top {background-color:yellow;
-height:100px; width:850px; padding-bottom:20px;}
+main .top {
+height:100px; width:850px;
+border-bottom: 1px solid gainsboro;
+}
 main .top h1 {
     float:left;
     font-size:20px;
     line-height:100px;
+    margin-left:25px;
 }
-main .top dl {
-    float:right;
-    line-height: 100;}
-main .top dl dd {line-height:100px;}
+main .top dl {}
+main .top dl dd {float:right;
+    line-height:100px;
+    margin-right:25px;
+}
+main .top dl .fa-sharp {margin-right:15px;}
 main .top dl dd span {}
-main .top dl dd em {}
+main .top dl dd em {font-weight:700;}
 main section {
-    background-color:greenyellow;
     padding: 100px 25px;
 }
 main section h2 {
     font-size:17px;
-    padding-bottom:100px;}
-main section p {line-height:25px;}
+    padding-left:25px;
+    color:purple;
+    font-weight:700;}
+    main section h2 .fa-circle-dot {margin-right: 15px;}
+main section p {line-height:25px; padding:50px 0px 0px 0px;}
 main section p em {color:green;}
-main section h2+p, main section p em {font-size:30px;}
+main section h2+p, main section p em {font-size:30px; line-height:40px;}
+main section h2+p {margin-left:50px;}
