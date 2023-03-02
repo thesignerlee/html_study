@@ -1,0 +1,248 @@
+/* 2.5rem, 1.5rem, 1.125, 1rem, 0.875rem,0.75rem */
+/* #555; #eee; #ff7f50; #1e61a8; */
+/* 전체 */
+/* all-layout */
+/* header,main {width:1080px; margin:0 auto;}
+header {background-color:lightyellow;}
+main {background-color: lightgray; overflow:hidden;}
+main aside {background-color: lightblue; width:200px; float:left;}
+main .container {background-color:lightgreen width:848px; float:right;} */
+/* header,main {
+    width:1080px; height:100px;
+    margin: 10px auto 0;
+    background-color: #fff;} */
+    /* 검색어 */
+header,main {width:1080px; margin: 0 auto;}
+header {padding:20px 0;}
+header .firstfrm {
+    border: 3px solid #1e61a8;
+    background-color: #fff;
+    border-radius: 5px;
+    width:435px;
+    margin:0 auto;
+}
+header .firstfrm fieldset {}
+header .firstfrm fieldset .skip {}
+header .firstfrm fieldset input {
+    width:90%; float:left; border:0; padding-top:10px;
+}
+header .firstfrm fieldset button {
+    background-color: #1e61a8;
+    color: #fff; width:30px; height:30px;
+    float:right;
+}
+header .firstfrm fieldset button::after {
+    content:'\f002';
+    display: block;
+}
+/* 바디 */
+main {overflow:hidden;}
+/* 왼쪽 */
+main aside {width: 200px; float:left; margin-right:32px;}
+main aside h2 {
+    font-size:1.5rem; margin-bottom: 30px;
+    font-weight:700;
+    text-align: center;
+    color:#1e61a8;}
+main aside .menu {}
+main aside .menu a {
+    display:block; padding:20px 0 20px 10px;
+    border-top: 1px solid #eee;
+    font-weight: 700;
+}
+main aside .menu a:last-child {border-bottom:1px solid #eee;}
+main aside .menu .active {
+    background-color: #1e61a8;
+    color:#fff;
+}
+/* 오른쪽 */
+main .container {
+    width:848px; float:left;}
+main .container .title_path {
+    overflow:hidden;
+    background-color: #eee;
+    border-bottom:1px solid #888;
+    padding:20px 15px;}    
+main .container .title_path h1 {
+    float: left;
+    font-weight: 700;}
+main .container .title_path dl {float: right;}
+main .container .title_path dl .skip {}
+main .container .title_path dl dd {font-size: 0.875rem;}
+main .container .title_path dl dd::before {content:'\f015'; display:inline-block; font-weight:600;}
+main .container .title_path dl dd span {}
+main .container .title_path dl dd,
+main .container .title_path dl dd span {font-size:0.875rem;}
+main .container .title_path dl dd span::before,
+main .container .title_path dl dd span::after {content:'\f104'; display:inline-block; font-weight:600;}
+/* member login */
+main .container .contents {padding:25px;}
+main .container .contents .login_box {background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+    width:720px; margin: 30px auto 50px; padding: 30px 0 30px 30px;
+    background-color: #eee; border: 1px solid #888;}
+main .container .contents .login_box h2 {}
+main .container .contents .login_box h2 span {color:#1e61a8;}
+main .container .contents .login_box h2,main .container .contents .login_box h2 span {font-size: 2.5rem; letter-spacing:-0.03em;}
+main .container .contents .login_box > p {color:#888; padding:20px 0;}
+/* 로그인 창 */
+main .container .contents .login_box .lastfrm {}
+main .container .contents .login_box .lastfrm fieldset { margin: 15px;
+    width:720px;}
+main .container .contents .login_box .lastfrm fieldset legend {}
+main .container .contents .login_box .lastfrm fieldset ul {float:left;}
+main .container .contents .login_box .lastfrm fieldset ul li {}
+main .container .contents .login_box .lastfrm fieldset ul li:first-child {margin-bottom:18px;}
+main .container .contents .login_box .lastfrm fieldset ul li span {display: inline-block; width:70px;}
+main .container .contents .login_box .lastfrm fieldset ul li input {width:285px;}/* 인풋은 인라인이지만 크기를 인식함 */
+main .container .contents .login_box .lastfrm fieldset p {float:left; margin-left:10px;}
+main .container .contents .login_box .lastfrm fieldset p button {
+    width:75px; height:67px;
+    background-color: #1e61a8; color:#fff;}
+main .container .contents .login_box .join_search {margin:20px 0 0 70px;}
+main .container .contents .login_box .join_search a {
+    background-color: #555; color: #fff;
+    display: inline-block; padding: 15px 10px;
+}
+main .container .contents .top_link {
+    float:right;
+    background-color: #eee; display:inline-block;
+    width:50px; height:50px; border-radius:50%;
+    text-align: center; line-height: 50px;
+}
+main .container .contents .top_link::before {
+    content:'\f077'; display:inline; font-weight:600;
+}
+/* main-right 웹 콘텐츠 명언 */
+main .container .contents .button_text {
+    clear:both; background-color:#eee;
+    border:1px solid #888;
+    padding:25px 0 25px 100px;
+}
+main .container .contents .button_text p {line-height:1.8;}
+main .container .contents .button_text p em {color:#ff7f50;}
+main .container .contents .button_text p,
+main .container .contents .button_text p em {font-size:0.875rem;}
+/* 먼저 온 텍스트보다 나중에 온 텍스트에게 값을 주는 게 더 낫다 */
+
+/* 2.5rem, 1.5rem, 1.125, 1rem, 0.875rem,0.75rem */
+/* #555; #eee; #ff7f50; #1e61a8; */
+/* header {}
+header .fristform {}
+header .firstform fieldset {}
+header .firstform fieldset legend {}
+header .firstform fieldset legend input {}
+header .firstform fieldset legend button {}
+header .firstform fieldset legend button img {}
+main {}
+main aside {}
+main aside h2 {}
+main aside .menu {}
+main aside .menu a {}
+main .container {}
+main .container .title_path {}
+main .container .title_path h1 {}
+main .container .title_path dl {}
+main .container .title_path dl dt {}
+main .container .title_path dl dd {}
+main .container .title_path dl dd img {}
+main .container .title_path dl dd span {}
+main .container .contents {}
+main .container .contents .login_box {}
+main .container .contents .login_box h2 {}
+main .container .contents .login_box h2 span {}
+main .container .contents .login_box p {}
+main .container .contents .login_box form {}
+main .container .contents .login_box form fieldset {}
+main .container .contents .login_box form fieldset legend {}
+main .container .contents .login_box form fieldset ul {}
+main .container .contents .login_box form fieldset ul li {}
+main .container .contents .login_box form fieldset ul li span {}
+main .container .contents .login_box form fieldset ul li input {}
+main .container .contents .login_box form fieldset p {}
+main .container .contents .login_box form fieldset p button {}
+main .container .contents .login_box .join_search {}
+main .container .contents .login_box .join_search a {}
+main .container .contents .login_box img {}
+main .container .contents a {}
+main .container .contents .button_text {}
+main .container .contents .button_text p {}
+main .container .contents .button_text p em {} */
+
+
+/* 
+header,main {
+    width:1080px; height:100px;
+    margin: 10px auto 0;}
+    /* 검색어 */
+/* header {
+    background-color: yellow;
+}
+header .fristform {}
+header .firstform fieldset {width:435px;
+border: 3px solid #1e61a8;
+border-radius: 3px;}
+header .firstform fieldset .skip {}
+header .firstform fieldset .skip input {width:435px;}
+header .firstform fieldset .skip button {}
+header .firstform fieldset .skip button .fa-magnifying-glass {} */
+/* 바디 */
+/* main {} */
+/* 왼쪽 */
+/* main aside {width: 200px; float:left;}
+main aside h2 {
+    font-size:40px; padding-bottom: 20px;
+    border-bottom:1px solid #333;
+    text-align: center;
+    color:#1e61a8;}
+main aside .menu {}
+main aside .menu a {display:block; line-height: 50px;}
+main aside .menu a:nth-child(2) {background-color: #1e61a8;
+color:white;} */
+/* 오른쪽 */
+/* main .container {width:848px; float:right; background-color: greenyellow;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+main .container .title_path {padding: 15px;}    
+main .container .title_path h1 {
+    float: left;
+    font-weight: 800;
+    display: block;}
+main .container .title_path dl {}
+main .container .title_path dl .skip {}
+main .container .title_path dl dd {font-size: 0.875rem;
+    float: right;}
+main .container .title_path dl dd i {margin:5px;}
+main .container .contents {}
+main .container .contents .login_box {background-color: #555;} */
+/* member login */
+/* main .container .contents .login_box h2 {}
+main .container .contents .login_box h2 span {color:#1e61a8;}
+main .container .contents .login_box h2,main .container .contents .login_box h2 span {font-size: 2.5rem; display: inline-block;}
+main .container .contents .login_box p {} */
+/* 로그인 창 */
+/* main .container .contents .login_box form {}
+main .container .contents .login_box form fieldset { margin: 15px;
+    width:720px;} */
+/* main .container .contents .login_box form fieldset legend {}
+main .container .contents .login_box form fieldset ul {display: inline-block;}
+main .container .contents .login_box form fieldset ul li {}
+main .container .contents .login_box form fieldset ul li span {}
+main .container .contents .login_box form fieldset ul li input {}
+main .container .contents .login_box form fieldset p {}
+main .container .contents .login_box form fieldset p button {
+    width:75px; height:67px;
+    background-color: #1e61a8; color:white;}
+main .container .contents .login_box .join_search {}
+main .container .contents .login_box .join_search a {
+    background-color: black;
+    color:white}
+main .container .contents .login_box img {float:right;}
+main .container .contents a {width: 12px; height: 12px; float:right;
+background-color: #eee; border-radius: 50%;}
+main .container .contents .button_text {}
+main .container .contents .button_text p {}
+main .container .contents .button_text p em {}  */

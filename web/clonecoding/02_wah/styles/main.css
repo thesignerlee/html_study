@@ -12,6 +12,7 @@ main .top h1 {
     font-size:20px;
     line-height:100px;
     margin-left:25px;
+    word-spacing:-0.02em;
 }
 main .top dl {}
 main .top dl dd {float:right;
@@ -20,17 +21,24 @@ main .top dl dd {float:right;
 }
 main .top dl .fa-sharp {margin-right:15px;}
 main .top dl dd span {}
-main .top dl dd em {font-weight:700;}
+main .top dl dd em {
+    font-weight:700;
+    word-spacing:-0.02em;}
 main section {
     padding: 100px 25px;
+    /* 배경이미지 속성 */
+    background-image:url(../images/bg.png);
+    background-size:50%; /* w h */
+    background-repeat:no-repeat;/* 기본repeat */
+    background-position:right top;/* x y 순서 -가 올라가는 것 +가 내려가는 것*/
 }
 main section h2 {
     font-size:17px;
-    padding-left:25px;
     color:purple;
-    font-weight:700;}
+    font-weight:700;
+    word-spacing:-0.02em;}
     main section h2 .fa-circle-dot {margin-right: 15px;}
-main section p {line-height:25px; padding:50px 0px 0px 0px;}
+main section p {line-height:25px; padding:50px 0px 0px 0px; word-spacing:-0.02em;}
 main section p em {color:green;}
 main section h2+p, main section p em {font-size:30px; line-height:40px;}
-main section h2+p {margin-left:50px;}
+main section h2+p {margin-left:25px;}
