@@ -1,0 +1,25 @@
+html,body {height:300vh/*뷰포트, 보고 있는 화면 비율 크기, 300vh는 스크롤이 매우 짧은 형태*/}
+.container {
+    width: 500px; padding:30px;
+    background-color:aqua;
+    margin:50px auto 0;
+    position: fixed; right:0; top:0;
+}
+.container .contents {
+    background-color: yellow;
+    padding: 30px;
+}
+.container .contents > * {
+    display:block; padding: 10px;
+    border: 2px solid red; background-color:#fff;
+}
+.container .contents h1 {
+    position:absolute;/* 현재 나 자신을 기준으로 */
+    left: 0; top: 0; /* X, y 방향 기준으로 한 번씩만 */
+}
+.container .contents p {
+    position:absolute;/* 실제 가족 관계를 따라가지만, 부모의 포지션이 없으면 가장 위에 위치한 값, body로 검.*/
+    right: 0; bottom: 0; /* float처럼 원래 위치가 사라지는 경우가 있음 */
+    /* 부모에 positsion 이라는 값만 있으면 기준으로 인식하게 됨. 포지션이라는 값 없이는 못 씀*/
+}
+.container .contents a {}
