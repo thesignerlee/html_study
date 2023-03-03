@@ -1,0 +1,5 @@
+/* 속성선택자  class id 없이도 구분해서 디자인을 할 수 있다는 게 가장 큰 점*/
+input[type*=ss] {background-color:aqua;}
+input[name*=id] {background-color:coral;}
+button[type$=n] {background-color:yellow;}
+input[type$=box] {background-color: blue;} /* -색깔 안 들어감 */

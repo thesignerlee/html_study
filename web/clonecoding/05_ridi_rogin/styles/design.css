@@ -1,0 +1,70 @@
+/* 0.75rem, 0.875rem, 1rem */
+/* #1f8ce6 #ccc #ebf6ff #f7fbff*/
+header, #loginFrm, .rogin_join_btn {width: 350px;}
+header {margin: 50px auto; border-bottom: 1px solid #eee; background-color: yellow;}
+header h1 {color: #1f8ce6; font-weight: 700; letter-spacing: -0.1em; text-align: center; padding-bottom: 10px;}
+header h1 a {}
+main {width:350px; margin:50px auto 0; text-align: center;}
+main #loginFrm {}
+main #loginFrm fieldset {border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;}
+main #loginFrm fieldset .login_user {border:0;}
+main #loginFrm fieldset .login_user input[type^=tex] { width:350px; height: 50px; padding:15px; outline:none; font-size: 0.875rem;}
+main #loginFrm fieldset .login_user input[type^=pas] { width:350px; height: 50px; padding:15px; outline:none; font-size: 0.875rem;}
+main #loginFrm fieldset .login {background-color: #f7fbff; width:350px; height: 30px; padding: 5px;}
+main #loginFrm fieldset .login .login_check label {float:left; line-height: 30px;}
+main #loginFrm fieldset .login .login_check label input[type^=check] {}
+main #loginFrm fieldset .login .login_check label span {font-size: 0.875rem;}
+main #loginFrm fieldset .login .id_pw {float:right; line-height: 30px;}
+main #loginFrm fieldset .login .id_pw .id_search {}
+main #loginFrm fieldset .login .id_pw .pas_re {}
+main .rogin_join_btn {margin:auto; text-align: center; display: block;}
+main .rogin_join_btn button[type^=but] {width:350px; height: 45px; display: block; background-color: #1f8ce6;  border-radius: 5px;}
+main .rogin_join_btn button[type^=but] span {color: white;}
+main .rogin_join_btn .join {
+    display: block; width:350px; height: 45px; line-height: 45px;
+    border-radius: 5px; border: 3px solid #f7fbff;
+}
+main .rogin_join_btn .join span {}
+
+
+/* html,body {background-color: #ebf6ff;}
+header, #loginFrm {background-color: #ccc; padding:15px 0; text-align:center;}
+header {}
+header h1 {}
+header h1 a {
+    color: #1f8ce6; font-weight:600;
+    letter-spacing: -0.02em;}
+main {width:350px; background-color: aqua; margin: 50px auto 0;}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {
+    border:1px solid #ccc;
+    border-radius:10px; overflow:hidden;}
+main #loginFrm fieldset ul li {
+    border-top:1px solid #ccc;
+}
+main #loginFrm fieldset ul li:first-child {border:0;}
+main #loginFrm fieldset ul li input[name$=id] {}
+main #loginFrm fieldset ul li input[name$=pw] {}
+main #loginFrm fieldset ul li input[name$=id],
+main #loginFrm fieldset ul li input[name$=pw] {border:0; width:350px; height: 50px; padding:15px; outline:none;}
+main #loginFrm fieldset ul li:nth-child(3) {
+    overflow:hidden; background-color: #f7fbff; padding:10px;
+}
+main #loginFrm fieldset ul li label {float:left;}
+main #loginFrm fieldset ul li label input[value$=y] {}
+main #loginFrm fieldset ul li label span {}
+main #loginFrm fieldset ul li > span {float:right;}
+main #loginFrm fieldset ul li > span a {font-size:0.75rem;}
+main #loginFrm fieldset ul li > span a:first-child::after {content:'|'; display:inline; padding-left:5px;}
+main #loginFrm fieldset .btn {margin:15px 0 0;}
+main #loginFrm fieldset .btn button[type=button] {
+    background-color: #1f8ce6; color: #fff; margin-bottom:5px;
+}
+main #loginFrm fieldset .btn a {
+    background-color:#fff; color:#1f8ce6; text-align:center; line-height: 45px;} */
+/* 버튼 기본 속성 때문에 글자가 가운데로 옴 */
+/* main #loginFrm fieldset .btn button[type=button],
+main #loginFrm fieldset .btn a {
+    display:block; width: 350px; height: 45px; border-radius:5px;
+} */
