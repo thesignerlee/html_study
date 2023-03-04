@@ -1365,4 +1365,59 @@ main .container .contents .button_text {}
 main .container .contents .button_text p {}
 main .container .contents .button_text p em {}  */
 <br>
-        <h2></h2>
+        <h2>2023.03.03.CSS.</h2>
+<br>
+        <h2>2023.03.04.css.</h2>
+        .notice {
+    width:495px; background-color:aqua;
+    border:1px solid #ccc; border-radius:10px;
+    padding: 25px 20px 40px 25px;
+    position: relative;
+}
+.notice h2 {
+    font-size: 1.2rem;
+    font-weight: 700;;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+.notice .more {
+    position:absolute; right: 20px; top:25px;
+}
+.notice ul {
+    background-color: yellow;
+    margin-left:100px;/* textalign은 공간을 정렬하는 것뿐이라 쓰는 건 안 됨 */
+}
+.notice ul li {padding:7px 0; position:relative;}
+.notice ul li::after {clear:both; content:''; display:inline-block;}
+.notice ul li::before {
+    content:''; display:inline-block;
+    width:4px; height:4px;background-color:gray;
+    position:absolute;
+    left:-5px; top:13px;
+}
+.notice ul li a {
+    float:left;
+    background-color: lime;
+    width:60%; /* 부모를 기준으로 50% */
+    white-space:nowrap;/* 한 줄 처리해라 (개행x) */
+    overflow:hidden; /*정해진 크기 안에서만 보이기*/
+    text-overflow:ellipsis; /*외부처리를 말줄임... */
+}
+.notice ul li span {float:right;}
+footer {padding: 30px;} 
+footer a {margin-right:10px;}
+footer a:nth-child(3) {color:#1f8ce6;}
+footer a::after {
+    /* content:'|'; display:inline; padding-left:10px; */
+    /* 위 방법 단점:글자크기보다 작거나 크게 할 수 없다. (디자인 다양성 부족) */
+    width:1px; height:15px; background-color: red; content:''; display:inline-block;
+    position:relative; right:-7px; top:2px;
+}
+footer a:last-child::after {display:none;}
+/* footer a:last-child::after {content:'';} */
+        
+   text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+        
+        글제목이 정해진 레이아웃보다 커져서 넘칠 때 - 말줄임으로 처리하기 - 너비를 정해주기 - 정해진 너비를 넘치면 줄이라고 코드로 지시
