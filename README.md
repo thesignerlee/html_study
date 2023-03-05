@@ -1421,3 +1421,5 @@ footer a:last-child::after {display:none;}
     overflow:hidden;
         
         글제목이 정해진 레이아웃보다 커져서 넘칠 때 - 말줄임으로 처리하기 - 너비를 정해주기 - 정해진 너비를 넘치면 줄이라고 코드로 지시
+<hr>
+        <h2>2023.03.05.CSS.REPEAT</h2>
