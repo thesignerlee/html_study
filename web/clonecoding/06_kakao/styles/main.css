@@ -1,0 +1,16 @@
+header {}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav a {}
+header a {}
+footer {}
+footer .f_container {}
+footer .f_container .f_top {}
+footer .f_container .f_top .f_t_left {}
+footer .f_container .f_top .f_t_left a {}
+footer .f_container .f_top a {}
+footer .f_container .f_btm {}
+footer .f_container .f_btm address {}
+footer .f_container .f_btm p {}
