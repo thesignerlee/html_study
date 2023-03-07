@@ -36,7 +36,7 @@ header .lnb {
     line-height:92px;
     margin-left:300px;}
 header .lnb a {}
-header .lnb a:nth-child(2):before {
+header .lnb a:nth-child(2)::before {
     content:'|';
     display:inline;
     padding-left: 10px;

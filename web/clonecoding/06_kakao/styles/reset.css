@@ -10,7 +10,7 @@ form,fieldset,legend,input,button,option,select,
 textarea,img,video,em,span,strong,q,blockqute,
 div,section,article,aside,header,nav,footer,
 address, label {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif,"Font Awesome 5 Free","Font Awesome 5 Brands";
     margin:0; padding:0; line-height:1.0;
     font-size:100%; font-style:normal;
     font-weight:normal; border:0;
