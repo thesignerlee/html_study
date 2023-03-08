@@ -1575,3 +1575,71 @@ f 12 눌러서 elements만 보면 됨
 틀린 부분을 도구에 찾을 수 없으면 선택자를 잘못 썼다는 뜻
 
 취소선은 순위에서 밀렸다는 뜻
+<br>
+         <h2>2023.03.08 CSS. flex.seoul</h2>
+         [스프라이트 이미지(sprite image) 이해와 적용](https://webty.tistory.com/183)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c98aff2-ca29-4769-8e64-6fa9a434c31e/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0815b439-6083-402c-88eb-83cdb6452757/Untitled.png)
+
+[스프라이트 만들기](https://www.toptal.com/developers/css/sprite-generator)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8177d04d-7243-415c-81ba-af0e4a1a6bcb/Untitled.png)
+
+텍스트 안 보이게 하기 - 화면 밖으로 빼버리기 (CSS)
+
+이미지를 1번에 클릭하고 드래그하기
+
+text-indent:-9999px; 화면 밖으로 내어쓰기
+
+```html
+/* background 개별속성 */
+            /* background-color:aqua;
+            background-image: url(./images/icon_controls/css_sprites.png);
+            background-repeat: no-repeat;
+            background-position:0 -3px; */
+            /* background 통합속성 */
+            /* background:color image repeat position */
+```
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe2ff9f9-b20c-4531-b820-c7d5a15d4bc3/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f0414d3-9400-44c0-a522-801c0ceca7ec/Untitled.png)
+
+값이 틀리지 않았음에도 아이콘이 사라졌을 때
+
+백그라운드 속성이 겹쳐서. 색깔, 이미지, 반복을 적지 않았기 때문.
+
+관리자 도구 위쪽에 올라온 게 높은 속성
+
+값을 기준으로 보는 게 아니라 속성을 우선으로 본다.
+
+background-position이라고 개별값을 넣어야 중첩되지 않음.
+
+---
+
+link 치고 탭 누르면 자동으로 링크 태그 완성됨 - 앱앱기능
+
+h1 같은 태그도 탭을 누르면 됨
+
+id를 붙일 때에도
+
+h1#title 치고 탭 누르면 자동으로 id 완성됨 클래스도 마찬가지
+
+자식 넣으려고 하면 꺽쇠를 넣는다. h1>a를 하고 탭 누르면 됨
+
+형제는 태그+태그
+
+자식 다섯을 만들고 싶으면 *5
+
+조합해서 자식을 정하고 그 자식의 개수를 5개로 만들고 싶을 때 h1>p*5
+
+header>h1+nav+div.lnb
+
+### 
+
+### 포지션 쓸 때 a 블록으로 만드는 거 반드시 주의할 것. 꼭 만들어야 함. display:block;이나 인라인 블록으로 꼭 만들어야 함.
+
+포지셔닝 할 때 피그마로 만들고 위치 확인하면서 디테일 하나하나 체크하면서 하기
+         <hr>
