@@ -1,0 +1,131 @@
+/* header */
+header {width:1152px; margin:0 auto;}
+/* h_top */
+header #h_top{
+    height:49px;
+    /* h_t_left, h_t_right 부모대상 */
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #f00;
+    margin-bottom: 20px;
+}
+header #h_top .h_t_left {
+    /* h1, nav 옆으로 보내기 위한 부모대상 */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header #h_top .h_t_left h1 {}
+header #h_top .h_t_left h1 a {margin-left: 16px;}
+header #h_top .h_t_left h1 a img {padding-bottom: 8px;}
+header #h_top .h_t_left nav {
+}
+header #h_top .h_t_left nav a {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+header #h_top .h_t_right {}
+header #h_top .h_t_right a {
+    margin-right: 16px; font-weight: 600;
+    font-size: 0.875rem;
+}
+/* h_btm */
+header #h_btm {
+    height:119px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content:center;
+}
+header #h_btm h1 {}
+header #h_btm h1 a {}
+header #h_btm h1 a img {width:80%;}
+/* h_btm */
+header #h_btm #searchFrm {}
+header #h_btm #searchFrm fieldset {
+    border: 3px solid #1e6cb3; padding:7px; width:300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header #h_btm #searchFrm fieldset input[name$=search] {
+    outline:none; border:0;
+    width:90%; padding:3px;}
+header #h_btm #searchFrm fieldset input[name$=search]::placeholder {
+    color: #1e6cb3;
+    font-size: 0.875rem;
+}
+header #h_btm #searchFrm fieldset #search {position:relative; top:3px;}
+header #h_btm #searchFrm fieldset #search img {width:100%;}
+header #h_btm .right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+header #h_btm .right .r_top {
+
+}
+header #h_btm .right .r_top #lang {border: 1px solid #1e6cb3; padding: 2px 3px;}
+header #h_btm .right .r_top #lang option {font-size: 0.875rem;}
+header #h_btm .right .r_top #go {background: #1e6cb3; padding: 6px 7px; color: white; font-size: 0.875rem; margin-left: 5px;}
+header #h_btm .right .r_btm {}
+header #h_btm .right .r_btm p {line-height: 1.3;}
+header #h_btm .right .r_btm p:first-child {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+main {background: beige;}
+/* main-1 */
+main .bnr_wrap {
+    width:1152px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* main-1 사회적 거리두기 배너 */
+main .bnr_wrap .left {
+    position: relative;
+}
+main .bnr_wrap .left .bnr {background-color: #1e6cb3;
+}
+main .bnr_wrap .left .bnr img {}
+main .bnr_wrap .left .close {
+    position: absolute; right: 10px; bottom: 20px;
+    background-color: #1e6cb3; color: #fff;
+    padding:7px 7px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+main .bnr_wrap .right {
+    width:360px;
+}
+/* main 코로나 19현황 */
+main .bnr_wrap .right .corona {
+    position: relative; display:block;
+    margin-bottom: 7px;
+}
+main .bnr_wrap .right .corona span {position:absolute; display:inline-block; height:20px;background-color: #1e6cb3;}
+main .bnr_wrap .right .corona img {}
+main .bnr_wrap .right .corona .date {text-align: right;
+    right: 20px; top: 11px;
+    width:160px; height:20px;
+}
+main .bnr_wrap .right .corona .result {text-align: center;}
+main .bnr_wrap .right .corona .result_1 {width:140px; left: 29px; top:81px;}
+main .bnr_wrap .right .corona .result_2 {width:140px; top: 80px; right:30px;}
+main .bnr_wrap .right .corona .result_3 {width:94px; top:155px; left:30px;}
+main .bnr_wrap .right .corona .result_4 {width:94px; top:155px; left:145px;}
+main .bnr_wrap .right .corona .result_5 {width:59px; top:155px; right:33px;}
+main .bnr_wrap .bnr {}
+main .bnr_wrap .bnr img {}
+main .service_wrap {}
+main .service_wrap .title {}
+main .service_wrap .title h1 {}
+main .service_wrap .title .site {}
+main .service_wrap .contents {}
+main .service_wrap .contents a {}
+main .service_wrap .contents a span {}

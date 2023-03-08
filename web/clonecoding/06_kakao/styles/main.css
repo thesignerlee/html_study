@@ -128,7 +128,9 @@ main .gallery a .contents {
     line-height:1.5;
 }
 /* footer */
-footer {border-top: 1px solid #333;}
+footer {
+    border-top: 1px solid #333;
+}
 footer .f_container {
     width:1140px;
     margin: 25px auto 0 auto;
@@ -154,11 +156,13 @@ footer .f_container .f_top .f_t_left a::after {
 }
 footer .f_container .f_top .f_t_left a:last-child::after {display:none;}
 footer .f_container .f_top .site {padding:15px; background: #333; color:#fff; border-radius: 5px;}
-footer .f_container .f_btm {}
+footer .f_container .f_btm {    padding-bottom: 50px;}
 footer .f_container .f_btm address {}
 footer .f_container .f_btm p {}
+footer .f_container .f_btm p:last-child {}
 footer .f_container .f_btm address,
-footer .f_container .f_btm p {line-height: 1.5; color:#aab6c5}
+footer .f_container .f_btm p {line-height: 1.5; color:#aab6c5;
+}
 /* 정답지 */
 /* footer {border-top: 1px solid #333;}
 footer .f_container {
