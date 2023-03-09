@@ -101,7 +101,7 @@ main .bnr_wrap .left .close {
     display: inline-block;
 }
 main .bnr_wrap .right {
-    width:360px;
+    width:360px; margin-left: 20px;
 }
 /* main 코로나 19현황 */
 main .bnr_wrap .right .corona {
@@ -122,10 +122,261 @@ main .bnr_wrap .right .corona .result_4 {width:94px; top:155px; left:145px;}
 main .bnr_wrap .right .corona .result_5 {width:59px; top:155px; right:33px;}
 main .bnr_wrap .bnr {}
 main .bnr_wrap .bnr img {}
-main .service_wrap {}
-main .service_wrap .title {}
-main .service_wrap .title h1 {}
-main .service_wrap .title .site {}
-main .service_wrap .contents {}
-main .service_wrap .contents a {}
-main .service_wrap .contents a span {}
+/* main2 */
+main .service_wrap {width:1152px; margin: 0px auto;
+}
+main .service_wrap .title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000; padding: 30px 0 10px; margin: 0 0 15px;
+}
+main .service_wrap .title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main .service_wrap .title .site {
+    border: 1px solid #666; padding: 5px;}
+main .service_wrap .contents {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .service_wrap .contents a {
+    width:9.09%; /* height:X */
+    display:flex; flex-flow:column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .service_wrap .contents a:nth-child(odd) {}
+main .service_wrap .contents a span {
+    
+}
+main .service_wrap .contents a span:first-child {background: url(../images/icon_service/css_sprites.png) no-repeat;
+    width:60px; height:60px;
+    background-position-y: 0;
+}
+main .service_wrap .contents a span:last-child {
+    font-size: 0.84rem;
+    letter-spacing: -0.02rem;
+}
+main .service_wrap .contents a:nth-child(1) span:first-child {
+}
+main .service_wrap .contents a:nth-child(2) span:first-child {background-position-x: -60px;}
+main .service_wrap .contents a:nth-child(3) span:first-child {background-position-x: -120px;}
+main .service_wrap .contents a:nth-child(4) span:first-child {background-position-x: -180px;}
+main .service_wrap .contents a:nth-child(5) span:first-child {background-position-x: -240px;}
+main .service_wrap .contents a:nth-child(6) span:first-child {background-position-x: -300px;}
+main .service_wrap .contents a:nth-child(7) span:first-child {background-position-x: -360px;}
+main .service_wrap .contents a:nth-child(8) span:first-child {background-position-x: -420px;}
+main .service_wrap .contents a:nth-child(9) span:first-child {background-position-x: -480px;}
+main .service_wrap .contents a:nth-child(10) span:first-child {background-position-x: -540px;}
+main .service_wrap .contents a:nth-child(11) span:first-child {background-position-x: -600px;}
+/* m_3_정책, 신고, 신청 배너 */
+main .m_3 {background: #eff4f8;}
+main .m_3 .m_3_1 {width: 1152px; margin: 30px auto; padding: 30px 0;
+display: flex;
+flex-flow:row nowrap;}
+main .m_3 .m_3_1 a {width:33.33%; display:inline-block;}
+main .m_3 .m_3_1 a img {width:100%;}
+/* m_4 */
+main .m_4 {width: 1152px; margin: 30px auto 0; padding: 30px 0;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+}
+main .m_4 > * {width:32%;}
+main .m_4 .event {
+}
+main .m_4 .event .title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 0 0 15px;
+}
+main .m_4 .event .title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+main .m_4 .event .title .more {
+    padding: 2px 10px;
+    border: 1px solid #000;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+main .m_4 .event .contents {
+    display:flex;
+    flex-flow: column nowrap;
+}
+main .m_4 .event .contents a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
+}
+main .m_4 .event .contents a:hover {text-decoration: underline;}
+main .m_4 .event .contents a span {padding-right: 10px;}
+main .m_4 .event .contents a .administration {color:#028ab6;}
+main .m_4 .event .contents a .administration+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;
+}
+main .m_4 .event .contents a .environment {color:#599100;}
+main .m_4 .event .contents a .environment+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;
+}
+main .m_4 .event .contents a .welfare {color:#d76000;}
+main .m_4 .event .contents a .welfare+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;
+}
+main .m_4 .event .contents a .housing {color:#c35c3c;}
+main .m_4 .event .contents a .housing+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;
+}
+main .m_4 .event .contents a .culture {color:#9b64d3;}
+main .m_4 .event .contents a .culture+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;
+}
+main .m_4 .festival {}
+main .m_4 .festival .title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 0 0 15px;
+}
+main .m_4 .festival .title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+main .m_4 .festival .title .more {
+    padding: 2px 10px;
+    border: 1px solid #000;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+main .m_4 .festival .contents {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .m_4 .festival .contents a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
+}
+main .m_4 .festival .contents a:hover {text-decoration: underline;}
+main .m_4 .festival .contents a span {padding-right: 10px;}
+main .m_4 .festival .contents a .environment {color:#599100;}
+main .m_4 .festival .contents a .environment+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 .festival .contents a .economy {color:#069363;}
+main .m_4 .festival .contents a .economy+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 .festival .contents a .culture {color:#9b64d3;}
+main .m_4 .festival .contents a .culture:nth-child(1)+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 .festival .contents a .culture:nth-child(2)+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 .festival .contents a .culture:nth-child(3)+span {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 .service {}
+main .m_4 .service .title {padding: 15px 0;}
+main .m_4 .service .title h1 {font-size: 1.5rem;
+    font-weight: 600;}
+main .m_4 .service .contents {
+    background: #eff4f8;
+    display: flex;
+    flex-flow: row wrap;
+}
+main .m_4 .service .contents a {
+    line-height: 1.5;
+    padding-top: 10px;
+    width:50%;
+}
+main .m_4 .service .contents a:hover {text-decoration: underline;}
+/* main .m_4 {background:aqua;}
+main .m_4 >* {}
+main .m_4 .event {background:yellow;}
+main .m_4 .festival {background:pink;}
+main .m_4 .service {background:beige;}
+main .m_4 > div.title {}
+main .m_4 > div.title h1 {}
+main .m_4 > div.title .more {}
+main .m_4 > div .contents {display:flex; flex-flow:column nowrap;}
+main .m_4 > div .contents a {padding:7px 0;}
+main .m_4 > div .contents a span {}
+main .m_4 > div .contents a .administration {color:#028ab6;}
+main .m_4 > div .contents a .environment {color:#599100;}
+main .m_4 > div .contents a .welfare {color:#d76000;}
+main .m_4 > div .contents a .housing {color:#c35c3c;}
+main .m_4 > div .contents a .culture {color:#9b64d3;}
+main .m_4 > div .contents a .economy {color:#069363;}
+main .m_4 > div .contents a span:first-child {margin-right:10px;}
+main .m_4 > div .contents a span:last-child {width:85%; background:white; white-space:nowrap; display:inline-block; text-overflow:ellipsis; overflow:hidden;}
+main .m_4 > .service {boredr:0;}
+main .m_4 > .service .contents {background:#eff4f8; display:flex; flew-flow:row wrap;}
+main .m_4 > .service .contents a {width:50%;} */
+/* m_5 */
+main .m_5 {width:1152px; margin: 30px auto 0;}
+main .m_5 .title {border-bottom: 1px solid #333;}
+main .m_5 .title h1 {font-weight: 600; font-size: 1.5rem;
+margin-bottom: 30px;}
+main .m_5 .contents { padding-top: 15px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;}
+main .m_5 .contents a {
+    width:12.5%;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .m_5 .contents a span {display:block;}
+main .m_5 .contents a span:first-child {
+    background: url(../images/icon_set/css_sprites.png) no-repeat;
+    width:104px; height:111px;
+    background-position-y: 0;
+}
+main .m_5 .contents a span:last-child {}
+main .m_5 .contents a:nth-child(1) span:first-child {background-position-x: 0;}
+main .m_5 .contents a:nth-child(2) span:first-child {background-position-x: -104px;}
+main .m_5 .contents a:nth-child(3) span:first-child {background-position-x: -208px;}
+main .m_5 .contents a:nth-child(4) span:first-child {background-position-x: -312px;}
+main .m_5 .contents a:nth-child(5) span:first-child {background-position-x: -416px;}
+main .m_5 .contents a:nth-child(6) span:first-child {background-position-x: -520px;}
+main .m_5 .contents a:nth-child(7) span:first-child {background-position-x: -624px;}
+main .m_5 .contents a:nth-child(8) span:first-child {background-position-x: -728px;}
+/* m_6 */
+main .m_6 {width: 1152px; margin: 30px auto 0;}
+main .m_6 .title {border-bottom: 1px solid #333; padding-bottom: 15px;
+display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+main .m_6 .title h1 {font-size: 1.5rem; font-weight: 600;}
+main .m_6 .title a {border: 1px solid #000; padding: 5px 7px; font-size: 0.875rem;}
+main .m_6 .contents {
+    padding-top: 15px; display: flex; flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+main .m_6 .contents a {width:23.5%; overflow:hidden;/* 벗어나는 부분을 숨겨라 */
+display: flex;
+flex-flow: column nowrap; align-items: center; 
+}
+main .m_6 .contents a span {padding: 10px 0; position:relative;}
+main .m_6 .contents a span:first-child {height:180px; overflow:hidden; width: 100%;}
+main .m_6 .contents a span:last-child {line-height: 1.5; font-size: 0.875rem; margin: 0 0 20px;}
+main .m_6 .contents a span img {width:100%; transition: all 4s;}
+/* 이미지 동적으로 움직이게 하기 */
+main .m_6 .contents a:hover span img {width:110%;/* 이것만 쓰면 A까지 커짐, width 속성의 경우 -> 왼쪽 상단 기준점으로 인해 우측하단으로만 이미지가 확대된다. 해결하는 방법 두 가지*/
+/*     position:absolute; left:50%; top:50%;
+    transform: translate(-50%, -50%); */
+    /* 처음부터 중심축으로 대상을 인식한다 transform속성은 기준점을 요소의 중심으로 인식한다.*/
+    transform: scale(1.1);
+    /* css 수치값이 변화가 일어날 때 애니메이션 적용 */
+    /* ex) 100->110 값변화 O */
+    /* ex) rew->column 값변화 X */
+    transition: all 4s; /* 숫자가 클수록 느려지는 느낌 */
+}
