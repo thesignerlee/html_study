@@ -57,7 +57,7 @@ main .visual .ai {
     position: absolute;
     left: 50%; top: 50%;
     transform:translate(-50%,-50%);
-}
+}/* 내부 이미지 움직이게 하는 법도 이걸 씀 */
 main .visual .ai img {}
 /* board+gallery */
 main div a h1 {
