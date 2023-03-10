@@ -1,0 +1,15 @@
+header {width:1220px; margin: 0 auto;}
+header a {}
+header a img {width:5%;}
+main {}
+main .main_1 {}
+main .main_1 img {position: absolute; display: block;}
+main .main_1 .box {}
+main .main_1 .comment {}
+main .main_1 .comment h1 {}
+main .main_1 .comment h1 span {}
+main .main_1 .comment a {}
+main .main_1 .comment a span {}
+main .main_1 .cmt {}
+main .main_1 .cmt a {}
+main .main_1 .cmt a span {}
