@@ -1,3 +1,7 @@
+.totop {position: fixed;
+    right:32px; bottom: 32px; width:35px; height:40px; z-index:9999;}
+.totop img {width:115%;}
+    
 /* header */
 header {width:1152px; margin:0 auto;}
 /* h_top */
@@ -380,3 +384,108 @@ main .m_6 .contents a:hover span img {width:110%;/* 이것만 쓰면 A까지 커
     /* ex) rew->column 값변화 X */
     transition: all 4s; /* 숫자가 클수록 느려지는 느낌 */
 }
+/* footer */
+footer {
+    width: 1152px; margin: 30px auto 0;
+}
+footer .f_t {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 30px 0;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer .f_t .t_left {}
+footer .f_t .t_left a {
+    margin-left: 5px; font-size: 1.1rem;
+}
+footer .f_t .t_left a {margin-left:0px;}
+footer .f_t .t_left a::after {
+    content: ''; display: inline-block; width:1px; height: 12px; background-color: #333;
+    margin: 0 10px;
+}
+footer .f_t .t_left a:nth-child(2) {font-weight: 600;}
+footer .f_t .t_left a:last-child::after {display:none;}
+footer .f_t .t_right {}
+footer .f_t .t_right a {display: inline-block; text-indent: -9999px;
+    background: url(../images/icon_sns2/css_sprites_black.png) no-repeat; width:25px; height:25px;
+    background-position-y: 0;}
+footer .f_t .t_right a:hover {
+        background: url(../images/icon_sns2/css_sprites_color.png) no-repeat; width:25px; height: 25px;
+        background-position-y: 0;
+    }
+footer .f_t .t_right a:first-child {
+        /*     background: url(../images/icon_sns2/css_sprites_black.png) no-repeat; width:25px; height:25px;
+        background-position-y: 0; */
+    }
+footer .f_t .t_right a:nth-child(1) {background-position-x: 0;}
+footer .f_t .t_right a:nth-child(2) {background-position-x: -25px;}
+footer .f_t .t_right a:nth-child(3) {background-position-x: -50px;}
+footer .f_t .t_right a:nth-child(4) {background-position-x: -75px;}
+footer .f_t .t_right a:nth-child(5) {background-position-x: -100px;}
+footer .f_t .t_right a:nth-child(6) {background-position-x: -125px;}
+footer .f_btm {display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+padding: 30px 0;}
+footer .f_btm .btm_l {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer .f_btm .btm_l .img span {}
+footer .f_btm .btm_l .img span img {}
+footer .f_btm .btm_l .address {margin-left: 30px;}
+footer .f_btm .btm_l .address address {}
+footer .f_btm .btm_l .address address a {}
+footer .f_btm .btm_l .address p {}
+footer .f_btm .btm_l .address address, footer .f_btm .btm_l .address p {line-height: 1.5;}
+footer .f_btm .btm_r {}
+footer .f_btm .btm_r a {}
+footer .f_btm .btm_r a img {}
+
+
+/* footer {width:1152px; margin:30px auto 0; background: aqua;}
+footer .top{
+    background: yellow;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding:15px 0;
+}
+footer .top .menu {}
+footer .top .menu a {font-size:0.91rem; letter-spacing: -0.02em; margin-left:10px;}
+footer .top .menu a:first-child {margin:0;}
+footer .top .menu a::before {content:''; display: inline-block; width:1px; height:10px; background: #000;
+    position:relative;left:-7px;}
+    footer .top .menu a:first-child::before {display:none;}
+footer .top .sns {background-color: pink;}
+footer .top .sns a {background: url(../images/icon_sns2/css_sprites_black.png) no-repeat;
+    background-position-y:0;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;}
+    footer .top .sns a:nth-child(1) {background-position-x: 0;}
+    footer .top .sns a:nth-child(2) {background-position-x: -25px;}
+    footer .top .sns a:nth-child(3) {background-position-x: -50px;}
+    footer .top .sns a:nth-child(4) {background-position-x: -75px;}
+    footer .top .sns a:nth-child(5) {background-position-x: -100px;}
+    footer .top .sns a:nth-child(6) {background-position-x: -125px;}
+    footer .top .sns a:hover {background: url(../images/icon_sns2/css_sprites_color.png) no-repeat;} a의 기준으로 수열 선택자가 흑백이기 때문에 처음에는 흑백으로 보이다가 마우스를 올리면 컬러로 보인다.
+    footer .top .sns a:nth-child(1):hover {background-position-x: 0;}
+    footer .top .sns a:nth-child(2):hover {background-position-x: -25px;}
+    footer .top .sns a:nth-child(3):hover {background-position-x: -50px;}
+    footer .top .sns a:nth-child(4):hover {background-position-x: -75px;}
+    footer .top .sns a:nth-child(5):hover {background-position-x: -100px;}
+    footer .top .sns a:nth-child(6):hover {background-position-x: -125px;}
+    footer .btm {
+        background: lime;
+        display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; padding: 20px 0;}
+footer .btm .copyright{display: flex; flex-flow:row nowrap ;}
+footer .btm .copyright .call120 {margin-right:20px;}
+footer .btm .copyright .call120 img {}
+footer .btm .copyright .copy {line-height:1.5;}
+footer .btm {}
+footer .btm .mark {}
+footer .btm .mark a {}
+footer .btm .mark a img{} */
