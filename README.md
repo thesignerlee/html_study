@@ -1644,3 +1644,5 @@ header>h1+nav+div.lnb
 포지셔닝 할 때 피그마로 만들고 위치 확인하면서 디테일 하나하나 체크하면서 하기
          <hr>
          <h2>2023.03.09.CSS.flex.trasnform.transition</h2>
+  <hr>
+         <h2>2023.-3/10.CSS.flex.tranfrorm.transtition, clonecoding 6 footer, exam</h2>
