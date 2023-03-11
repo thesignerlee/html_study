@@ -1645,4 +1645,6 @@ header>h1+nav+div.lnb
          <hr>
          <h2>2023.03.09.CSS.flex.trasnform.transition</h2>
   <hr>
-         <h2>2023.-3/10.CSS.flex.tranfrorm.transtition, clonecoding 6 footer, exam</h2>
+         <h2>2023.3/10.CSS.flex.tranfrorm.transtition, clonecoding 6 footer, exam</h2>
+<hr>
+         <h2>2023.03.11.css.flex.transform. repeat</h2>
