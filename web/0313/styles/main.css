@@ -1,0 +1,20 @@
+#wrap {
+    width:900px; height:500px; margin: 50px auto 0;
+    background:aqua; text-transform: uppercase;
+    text-align: center; line-height: 500px; font-size: 3rem;
+}
+@media screen and (max-width: 899px) {
+    #wrap {background:yellow;}
+}
+@media screen and (max-width: 768px) {
+    #wrap {background:pink;}
+}
+@media screen and (max-width: 500px) {
+    
+}
+/* @media screen and (min-width:500px) {
+    #wrap {background:yellow; height: 400px;}
+}
+@media screen and (min-width:700px){
+    #wrap {background-color: pink;}
+} */
