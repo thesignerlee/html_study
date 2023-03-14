@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 | 회원가입</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/join2.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="images/logo.jpg"></a></h1>
+    </header>
+    <main>
+        <form action="#" method="post" id="sign_in">
+            <fieldset>
+                <legend class="skip">회원가입</legend>
+                <dl>
+                    <dt>아이디</dt>
+                        <dd><input type="text" name="user_id"><span>@naver.com</span></dd>
+                    <dt>비밀번호</dt>
+                        <dd><input type="text" name="user_pw"></dd>
+                    <dt>비밀번호 재확인</dt>
+                        <dd><input type="text" name="user_pw_confirm"></dd>
+                    <dt>이름</dt>
+                        <dd><input type="text" name="user_name"></dd>
+                    <dt>생년월일</dt>
+                        <dd><input type="text" placeholder="년(4자)" name="years"></dd>
+                        <dd>
+                            <select name="month">
+                                <option>월</option>
+                                <option>1월</option>
+                                <option>2월</option>
+                                <option>3월</option>
+                                <option>4월</option>
+                                <option>5월</option>
+                                <option>6월</option>
+                                <option>7월</option>
+                                <option>8월</option>
+                                <option>9월</option>
+                                <option>10월</option>
+                                <option>11월</option>
+                                <option>12월</option>
+                            </select>
+                        </dd>
+                        <dd><input type="text" placeholder="일" name="days"></dd>
+                    <dt>성별</dt>
+                        <dd><select name="gender">
+                            <option>성별</option>
+                            <option>남</option>
+                            <option>여</option>
+                        </select></dd>
+                    <dt>본인 확인 이메일<em>(선택)</em></dt>
+                        <dd><input type="text" placeholder="선택입력" name="email"></dd>
+                    <dt>휴대전화</dt>
+                        <dd>
+                            <select name="country">
+                                <option>대한민국 +82</option>
+                                <option>홍콩 +852</option>
+                            </select>
+                        </dd>
+                        <dd><input type="text" placeholder="전화번호 입력" name="phonenumber"></dd>
+                        <!-- 뒤에 작업 -->
+                </dl>
+            </fieldset>
+        </form>
+    </main>
+        
+    
+</body>
+</html>
