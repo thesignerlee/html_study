@@ -1654,3 +1654,5 @@ header>h1+nav+div.lnb
 <h2>2023.03.13.css.git.</h2>
 <hr>
          <h2>2023.03.14.css.git.naver.</h2>
+<hr>
+<h2>2023.03.16.css.git.figma.scss.</h2>
