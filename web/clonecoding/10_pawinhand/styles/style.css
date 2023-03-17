@@ -1,0 +1,249 @@
+#header_bg {
+  background-color: #eee;
+}
+#header_bg header {
+  margin: 0 auto;
+  /*     width:1200px; */
+  /*     width:100%;
+      max-width:1200px;
+      min-width:320px; */
+  max-width: 1200px;
+  min-width: 320px;
+  width: calc(100% - 30px);
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: aqua;
+  height: 70px;
+}
+#header_bg header nav {
+  background: yellow;
+}
+#header_bg header nav a {
+  margin-left: 16px;
+}
+#header_bg header nav a:first-child {
+  margin-left: 0;
+}
+
+#slide_wrap {
+  margin: 0 auto;
+  /*     width:1200px; */
+  /*     width:100%;
+      max-width:1200px;
+      min-width:320px; */
+  max-width: 1200px;
+  min-width: 320px;
+  width: calc(100% - 30px);
+  overflow-x: hidden;
+  position: relative;
+}
+#slide_wrap .slide_container .slide {
+  display: none;
+}
+#slide_wrap .slide_container .slide1 {
+  display: block;
+}
+#slide_wrap .prev, #slide_wrap .next {
+  position: absolute;
+}
+#slide_wrap .prev {
+  left: 1%;
+  top: 45%;
+}
+#slide_wrap .next {
+  right: 1%;
+  top: 45%;
+}
+#slide_wrap .pagenation {
+  background: brown;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+#slide_wrap .pagenation a {
+  background: #ccc;
+  border-radius: 50%;
+  text-indent: -9999px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+#slide_wrap .pagenation a.active {
+  background: #fff;
+}
+#slide_wrap .pagenation a:last-child {
+  margin: 0;
+}
+
+#gallery_wrap {
+  background: lime;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  /*     width:1200px; */
+  /*     width:100%;
+      max-width:1200px;
+      min-width:320px; */
+  max-width: 1200px;
+  min-width: 320px;
+  width: calc(100% - 30px);
+  overflow-x: hidden;
+  padding: 50px 0;
+}
+#gallery_wrap .gallery {
+  width: 100px;
+  height: 100px;
+}
+#gallery_wrap .gallery img {
+  width: 100%;
+}
+#gallery_wrap .g5 {
+  width: 200px;
+  height: 200px;
+}
+
+#bnr_wrap {
+  background: #222;
+  text-align: center;
+  padding: 50px 0;
+}
+#bnr_wrap span {
+  color: #fff;
+}
+
+#card_wrap {
+  background: orange;
+  margin: 0 auto;
+  /*     width:1200px; */
+  /*     width:100%;
+      max-width:1200px;
+      min-width:320px; */
+  max-width: 1200px;
+  min-width: 320px;
+  width: calc(100% - 30px);
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+#card_wrap .card {
+  width: 23.5%;
+  background: #eee;
+  padding: 30px 20px;
+}
+#card_wrap .card * {
+  padding-bottom: 20px;
+  line-height: 1.3;
+}
+#card_wrap .card .photo {
+  text-align: center;
+}
+#card_wrap .card .photo img {
+  width: 80%;
+}
+#card_wrap .card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+#card_wrap .card p {
+  margin: 15px;
+  font-weight: 600;
+}
+#card_wrap .card p:last-child {
+  padding: 0;
+}
+
+#qa_wrap {
+  margin: 0 auto;
+  /*     width:1200px; */
+  /*     width:100%;
+      max-width:1200px;
+      min-width:320px; */
+  max-width: 1200px;
+  min-width: 320px;
+  width: calc(100% - 30px);
+  overflow-x: hidden;
+}
+#qa_wrap h2 {
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin: 30px 0;
+}
+#qa_wrap #qaFrm fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+#qa_wrap #qaFrm fieldset * {
+  padding: 10px;
+  background: #eee;
+  border: 0;
+  margin-bottom: 16px;
+}
+#qa_wrap #qaFrm fieldset input::-moz-placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset input:-ms-input-placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset input::placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset #user_qa {
+  background: #eee;
+  padding: 25px 0;
+  height: 200px;
+}
+#qa_wrap #qaFrm fieldset #user_qa::-moz-placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset #user_qa:-ms-input-placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset #user_qa::placeholder {
+  color: #000;
+  padding-left: 15px;
+  font-weight: 600;
+}
+#qa_wrap #qaFrm fieldset #qa_btn {
+  background: #222;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+footer {
+  background: #222;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+
+/* @media screen and (max-width: 1024px) {
+    #header_bg {
+        header {background: coral;}
+}
+} *//*# sourceMappingURL=style.css.map */

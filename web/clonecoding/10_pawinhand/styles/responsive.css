@@ -1,0 +1,19 @@
+/* 태블릿 */
+@media screen and (max-width:1024px){
+    #gallery_wrap .g1,
+    #gallery_wrap .g9 {display:none;}
+    #card_wrap .card4 {display:none;}
+    #card_wrap .card {width:32%;}
+}
+/* 모바일 */
+@media screen and (max-width:768px){
+    #gallery_wrap .g2,
+    #gallery_wrap .g3,
+    #gallery_wrap .g7,
+    #gallery_wrap .g8 {display:none;}
+    #card_wrap .card2,
+    #card_wrap .card3 {display:none;}
+    #card_wrap .card {width:100%;}
+    /* 중복되므로 g1, g9는 안 써도 됨 */
+    /* 4로 나눠서 맞춘 모습이므로 안 이쁘다 */
+}

@@ -1,0 +1,144 @@
+// 변수
+// ---------색상
+$bg1-light:#eee; // header, card, Q&A 배경
+$bg2-dark:#222; // bnr, btn, footer 배경
+$font-color1-bk:#000; //
+$font-color2-wh:#fff; //
+$page-active:#fff; // 페이지번호 비활성화
+$page-disable:#ccc; // 페이지번호 활성화
+// ----------여백, 변수는 값만 넣어준다.
+$padding50:50px 0;
+// 재사용규칙 (Mixins) 선언과 호출
+// @mixin 생성규칙명
+// @include 호출규칙명
+@mixin layout { //컨텐츠 크기+가운데정렬
+    margin:0 auto;
+/*     width:1200px; */
+/*     width:100%;
+    max-width:1200px;
+    min-width:320px; */
+    max-width:1200px;
+    min-width:320px;
+    width:calc(100% - 30px);
+    overflow-x: hidden;}
+@mixin flex-row-between {
+    display:flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+@mixin flex-column-between {
+    display:flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+// 실행
+#header_bg {
+    background-color: $bg1-light;
+    header {
+        @include layout;
+        @include flex-row-between;
+        background: aqua; height:70px;
+        h1 {a{img{}}}
+        nav {
+            background: yellow;
+            a {
+                margin-left: 16px;
+            }
+            a:first-child {margin-left: 0;}
+        }
+    }//header end 혹은 e:header
+}//header_bg end
+#slide_wrap {
+    @include layout;
+    position: relative;
+    .slide_container { 
+        .slide {display:none;}
+        .slide1 {display:block;}
+        .slide2 {}
+        .slide3 {}
+        .slide4 {}
+    }//e:slide_container
+    .prev, .next {position: absolute;}
+    .prev {left : 1%; top: 45%;}
+    .next {right: 1%; top: 45%;}
+    .pagenation {
+        background: brown; position:absolute; left:0; bottom:50px; text-align: center; width:100%;
+        a {
+            background: $page-disable;
+            border-radius: 50%;
+            text-indent: -9999px;
+            width: 16px;
+            height:16px;
+            display:inline-block;
+            margin-right: 10px;
+        }
+        a.active {
+            background: $page-active;
+        }
+        a:last-child {margin: 0;}
+    }
+}//e:slide_wrap
+#gallery_wrap {
+    background: lime;
+    @include flex-row-between;
+    @include layout;
+    padding: $padding50;
+    .gallery {width:100px; height: 100px;
+        img {
+            width:100%;
+        }
+    }
+    .g5 {width:200px; height:200px;}
+}//e:gallery_wrap
+#bnr_wrap {background: $bg2-dark; text-align: center;
+    padding:$padding50;
+    span {color:$font-color2-wh;}
+}//e:bnr_wrap
+#card_wrap {background: orange;
+    @include layout;
+    @include flex-row-between;
+    padding:$padding50;
+    .card {
+        width:23.5%;
+        background: $bg1-light;
+        padding:30px 20px;
+        * {padding-bottom: 20px; line-height: 1.3;}
+        .photo{
+            text-align:center;
+            img {width: 80%;}
+        }
+        h2 {font-size: 1.5rem; font-weight: 600;
+            margin-left: 15px;}
+        p {margin: 15px; font-weight: 600;}
+        p:last-child {padding:0;}
+    }
+}//e:card_wrap
+#qa_wrap { @include layout;
+    h2 {font-weight: 600; font-size: 1.375rem; margin: 30px 0;}
+    #qaFrm {
+        fieldset { @include flex-column-between;
+            * {padding: 10px; background: $bg1-light; border:0; margin-bottom: 16px;}
+            input::placeholder {color:$font-color1-bk; padding-left:15px; font-weight: 600;}
+            input[name$=id] {}
+            input[name$=number] {}
+            #user_qa {background: $bg1-light; padding: 25px 0; height: 200px;}
+            #user_qa::placeholder {color:$font-color1-bk; padding-left:15px; font-weight: 600;}
+            #qa_btn {
+                background: $bg2-dark; text-align: center; margin: 0;
+    padding:25px 0;
+    color:$font-color2-wh;
+    margin-bottom: 50px;
+            }
+        }
+    }
+}//e:qa_wrap
+footer {
+    background: $bg2-dark; text-align: center;
+    padding:$padding50;
+    color:$font-color2-wh;
+}
+
+//media quree
+/* @media screen and (max-width: 1024px) {
+    #header_bg {
+        header {background: coral;}
+}
+} */
