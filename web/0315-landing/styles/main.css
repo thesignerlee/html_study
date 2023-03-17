@@ -1,0 +1,126 @@
+/* 공통 */
+.comment {text-align: center;}
+.comment h1 {font-size: 2.5rem; font-weight: 600;}
+.comment p {font-size: 1.5rem;}
+.comment h1, .comment p {line-height: 1.5;}
+#visual_bg, #page_1, #promo,
+.campaign1, .campaign2, .campaign3,
+.campaign4, .campaign5, .campaign6 {width:1240px; margin: 50px auto;}
+/* 로고 */
+#visual_bg {margin: 0 auto;}
+#visual_bg .container {width:60px; height: 60px;}
+#visual_bg .container a {}
+#visual_bg .container a img {width:100%;}
+/* 대화면페이지 */
+#page_1 {}
+#page_1 img {width:100%;}
+/* 프로모션 영상 */
+#promo {}
+#promo .container {text-align: center; margin: 100px 0;}
+#promo .container iframe {}
+/* 캠페인1 */
+.campaign1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+.campaign1 .comment {}
+.campaign1 .comment h1 {margin-bottom: 45px;}
+.campaign1 .comment p {}
+.campaign1 .comment h1, .campaign1 .comment p {margin-right: 100px;}
+.campaign1 p {}
+.campaign1 p img {width:150%;}
+/* 캠페인2 */
+.campaign2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.campaign2 p {}
+.campaign2 > p {padding-left: 200px;}
+.campaign2 p img {}
+.campaign2 .comment {padding-right: 50px;}
+.campaign2 .comment h1 {margin-bottom: 45px;}
+.campaign2 .comment p {}
+/* 캠페인3 */
+.campaign3 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 100px;
+}
+.campaign3 .comment {text-align: center; margin: 50px 0;}
+.campaign3 .comment h1 {margin-bottom: 30px;}
+.campaign3 .container {display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;}
+.campaign3 .container .jas {}
+.campaign3 .container .jas p {text-align: center;}
+.campaign3 .container .jas p img {width: 100%; margin-bottom: 50px;}
+.campaign3 .container .jas p span {line-height: 1.5; font-size: 1.2rem;}
+.campaign3 .container .jam {}
+.campaign3 .container .jam p {text-align: center;}
+.campaign3 .container .jam p img {width: 100%;}
+.campaign3 .container .jam p span {line-height: 1.5; font-size: 1.2rem;}
+.campaign3 p {}
+.campaign3 > p {margin-top: 30px; text-align: end;}
+/* 캠페인4 */
+.campaign4 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+}
+.campaign4 h1 {font-size: 2.5rem; font-weight: 600;}
+.campaign4 .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+.campaign4 .container .go1 {}
+.campaign4 .container .go1 p {width: 500px; height:305px; margin-right:25px;}
+.campaign4 .container .go1 p img {width: 100%; margin-bottom: 20px;}
+.campaign4 .container .go1 p span {font-size: 1.2rem;}
+.campaign4 .container .go2 {}
+.campaign4 .container .go2 p {width: 500px; height:305px; margin-left:25px;}
+.campaign4 .container .go2 p img {width: 100%; margin-bottom: 20px;}
+.campaign4 .container .go2 span {font-size: 1.2rem;}
+.campaign4 .comment {}
+.campaign4 .comment h1 {margin-bottom: 30px;}
+.campaign4 .comment p {}
+/* 캠페인5 */
+.campaign5 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+}
+.campaign5 h1 {font-size: 2.5rem; font-weight: 600; margin-bottom: 50px;}
+.campaign5 .led {}
+.campaign5 .led p {}
+.campaign5 .led p img {width:75%;}
+.campaign5 .comment {}
+.campaign5 .comment p {margin-top: 50px;}
+/* 캠페인6 */
+.campaign6 {text-align: center;}
+.campaign6 h1 {font-size: 2.5rem; font-weight: 600; margin: 100px 0;}
+.campaign6 .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.campaign6 .container .cham {text-align: center; margin-bottom: 50px;}
+.campaign6 .container .cham p img {width:75%;}
+.campaign6 .container .cham {margin-bottom: 300px;}
+.campaign6 .container .cham2 > p {text-align: center; font-size: 1.2rem; margin-top: 20px; line-height: 1.5;}
+.campaign6 .container .cham2 p img {width:100%;}
