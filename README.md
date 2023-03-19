@@ -1660,3 +1660,5 @@ header>h1+nav+div.lnb
          <h2>2023.03.17.css.landing.page.반응형 웹. 미디어 쿼리.</h2>
          <hr>
          <h2>2023.03.18.GTQ 자격증 연습</h2>
+<hr>
+         <h2>2023.03.19.sunday. nintendo main page</h2>
