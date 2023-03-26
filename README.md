@@ -1667,4 +1667,6 @@ header>h1+nav+div.lnb
 <hr>
          <h2>2023.03.24.friday.GTQ.JAVA.</h2>
          <hr>
-         <h2>2023.03.24.gtq test</h2>
+         <h2>2023.03.25.gtq test</h2>
+<hr>
+         <h2>2023.03.26. rest.</h2>
