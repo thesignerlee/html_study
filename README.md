@@ -1706,3 +1706,5 @@ header>h1+nav+div.lnb
 <h2>2023.04.13.langdingpage, javascript, Node, className, className</h2>
 <hr>
 <h2>2023.04.15.for. tab. submenu. </h2>
+<hr>
+         <h2>2023.04.16.SUNDAY.</h2>
