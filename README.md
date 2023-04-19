@@ -1712,3 +1712,60 @@ header>h1+nav+div.lnb
 <h2>2023.04.17.닷홈. 웹호스팅. scrollTo, scrollBy</h2>
 <hr>
 <h2>2023.04.18.scroll.</h2>
+<hr>
+         <h2>2023.04.19. imtg,txt,video</h2>
+         <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-3</title>
+    <style>
+        * {box-sizing: border-box; margin:0; padding:0;}
+        body {height:500vh; overflow-x:hidden;}
+        .container {}
+        .container img {
+            width:100%;
+            position: fixed; left:0; top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/video/1.jpg" alt="">
+    </div>
+
+    <script>
+
+        const imgElem = document.querySelector('.container img')
+        let totalImageCount = 282
+        let videoImages = [] // 빈 배열
+        //1~282 이미지 생성
+        setImages()
+        init()
+        function setImages(){//1~282 이미지 생성 함수
+            for(let i=1; i<=totalImageCount; i++){
+                let imgE = document.createElement('img')
+                imgE.src = `./images/video/${i}.jpg`
+                console.log(imgE)
+                videoImages.push(imgE)
+            }
+        }
+        function init(){//스크롤 동작 함수
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset / (document.body.offsetHeight - window.innerHeight) // 전체 바디가 offsetHeight. 마지막 한 공간은 스크롤이 안 됨. 이게 window.innerHeight. 이것을 뺀 나머지를 pageYOffset에 나누는 것. 쉽게 생각해서 스크롤 하는 값을 정교하게 뽑겠다는 식.
+            let currentFrame = Math.round((totalImageCount-1) * progress) //반올림 하는 속성
+            // console.log(`progress>>${progress},
+            // currentFrame>>${currentFrame}`)
+                imgElem.src = videoImages[currentFrame].src
+            })
+        }
+
+    </script>
+</body>
+</html>
+  ---
+  <hr>
