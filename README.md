@@ -1769,3 +1769,6 @@ header>h1+nav+div.lnb
 </html>
   ---
   <hr>
+  <h2>2023.04.20.cursor, timer</h2>
+  <hr>
+  ---
