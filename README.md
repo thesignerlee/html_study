@@ -1772,3 +1772,5 @@ header>h1+nav+div.lnb
   <h2>2023.04.20.cursor, timer</h2>
   <hr>
   ---
+<h2>2023.04.23.sunday</h2>
+<hr>
