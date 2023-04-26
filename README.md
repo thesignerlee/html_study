@@ -1777,3 +1777,5 @@ header>h1+nav+div.lnb
 ---
 <h2>2023.04.25.swiper</h2>
 ---
+  <h2>2023.04.26.plugin</h2>
+  ---
