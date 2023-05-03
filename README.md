@@ -1780,3 +1780,5 @@ header>h1+nav+div.lnb
   <h2>2023.04.26.plugin</h2>
   ---
 <h2>2023.04.30.sunday</h2>
+---
+<h2>2023.05.03.burgerking.banner.websile.create</h2>
