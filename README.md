@@ -1786,3 +1786,5 @@ header>h1+nav+div.lnb
 <h2>2023.05.04.LOTTECINEMA.WIREFRAME.</h2>
 ---
 <h2>2023.05.05.CHILDRUN DAY</h2>
+---
+<h2>2023.05.06.LOTTE CINEMA.</h2>
