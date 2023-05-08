@@ -1790,3 +1790,6 @@ header>h1+nav+div.lnb
 <h2>2023.05.06.LOTTE CINEMA.</h2>
 ---
 <h2>2023.05.07.LOTTE CINEMA. CSS. sunday</h2>
+---
+  <h2>2023.05.08.LOTTE CINEMA. CSS. </h2>
+  ---
