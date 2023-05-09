@@ -1793,3 +1793,6 @@ header>h1+nav+div.lnb
 ---
   <h2>2023.05.08.LOTTE CINEMA. CSS. </h2>
   ---
+  <h2>2023.05.09. LOTTE CINEMA. MAIN, header, footer. half clear sub start</2>
+  ---
+  
