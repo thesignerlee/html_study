@@ -1817,3 +1817,5 @@ header>h1+nav+div.lnb
 ---
   <h2>2023.05.24.sns bnr</h2>
   ---
+  <h2>2023.05.25.mypage</h2>
+  ---
