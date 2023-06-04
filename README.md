@@ -1832,3 +1832,5 @@ header>h1+nav+div.lnb
   <h2>2023.06.01.면접</h2>
 ---
   <h2>2023.06.03.saturday. figma</h2>
+  ---
+  <h2>2023.06.04.sunday.</h2>
